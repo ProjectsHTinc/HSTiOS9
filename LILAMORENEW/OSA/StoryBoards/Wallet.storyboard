@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zI-Ai-3mc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0zI-Ai-3mc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,7 +28,7 @@
         <!--Wallet Details View Controller-->
         <scene sceneID="Zfm-yd-dgx">
             <objects>
-                <viewController storyboardIdentifier="wallet" id="0zI-Ai-3mc" customClass="WalletDetailsViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wallet" id="0zI-Ai-3mc" customClass="WalletDetailsViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cg3-YX-HXZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +153,7 @@
                                                             <constraint firstAttribute="height" constant="284" id="fOL-bI-yGG"/>
                                                         </constraints>
                                                         <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="2cT-tH-g4T" customClass="WalletListTableViewCell" customModule="OSA" customModuleProvider="target">
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="74" id="2cT-tH-g4T" customClass="WalletListTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="28" width="414" height="74"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2cT-tH-g4T" id="Lut-Rl-Qu7">
@@ -296,7 +295,7 @@
         <!--Add Money Wallet View Controller-->
         <scene sceneID="gs6-Ce-dz9">
             <objects>
-                <viewController id="1fv-1Q-wmi" customClass="AddMoneyWalletViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1fv-1Q-wmi" customClass="AddMoneyWalletViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2lJ-PW-NE3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,6 +461,7 @@
                     <navigationItem key="navigationItem" id="vOc-Po-uXh"/>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="walletAmountLabel" destination="V4A-Rc-c7G" id="f04-wL-e9J"/>
                         <outlet property="walletAmountTextField" destination="zlt-hq-kWy" id="fa7-Kx-0xB"/>
                         <segue destination="qeO-ZK-1Ve" kind="show" identifier="to_webView" id="1G3-kw-w4i"/>
                     </connections>
@@ -473,7 +473,7 @@
         <!--Web View View Controller-->
         <scene sceneID="0Kv-AH-Lt3">
             <objects>
-                <viewController storyboardIdentifier="CCWebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qeO-ZK-1Ve" customClass="CCWebViewViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CCWebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qeO-ZK-1Ve" customClass="CCWebViewViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcV-Cl-ogy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -489,7 +489,7 @@
         <!--Result View Controller-->
         <scene sceneID="wEI-Lt-ht9">
             <objects>
-                <viewController id="uzC-cl-tXi" customClass="CCResultViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uzC-cl-tXi" customClass="CCResultViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SAJ-nk-htb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -789,7 +789,7 @@
         <!--Review Order View Controller-->
         <scene sceneID="Yoi-t4-E6O">
             <objects>
-                <viewController storyboardIdentifier="reviewOrder" id="TeI-wg-9PB" customClass="ReviewOrderViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reviewOrder" id="TeI-wg-9PB" customClass="ReviewOrderViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qCE-X7-LGZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -807,7 +807,7 @@
                                                     <constraint firstAttribute="height" constant="350" id="glF-I8-4TL"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="156" id="a9m-Mv-Pzl" customClass="ReviewOrderTableViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="156" id="a9m-Mv-Pzl" customClass="ReviewOrderTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="414" height="156"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a9m-Mv-Pzl" id="O1N-re-0fy">
@@ -1173,7 +1173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAf-SY-fPW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.637681159420293" y="129.91071428571428"/>
+            <point key="canvasLocation" x="571" y="682"/>
         </scene>
     </scenes>
     <resources>

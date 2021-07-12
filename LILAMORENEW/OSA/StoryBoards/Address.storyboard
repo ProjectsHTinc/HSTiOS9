@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9NE-tc-dWD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -26,7 +25,7 @@
         <!--Address-->
         <scene sceneID="Aui-mB-Xx4">
             <objects>
-                <viewController storyboardIdentifier="addressList" id="9NE-tc-dWD" customClass="AddressListViewController" customModule="LiitleAmoreNEW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addressList" id="9NE-tc-dWD" customClass="AddressListViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dkz-wQ-Uan">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +35,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.95686274510000002" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="168" id="aHG-8v-c3L" customClass="AddressListTableViewCell" customModule="LiitleAmoreNEW" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="168" id="aHG-8v-c3L" customClass="AddressListTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="168"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aHG-8v-c3L" id="J1z-9u-hIq">
@@ -316,7 +315,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="tableView" destination="HU5-Of-rBx" id="0h8-NV-GrZ"/>
+                        <outlet property="tableView" destination="HU5-Of-rBx" id="tiH-QF-fUy"/>
                         <segue destination="jA7-Br-5kh" kind="show" identifier="to_edit" id="I9X-hM-xBJ"/>
                     </connections>
                 </viewController>
@@ -327,7 +326,7 @@
         <!--Add Address-->
         <scene sceneID="ByJ-vd-Qwl">
             <objects>
-                <viewController id="jA7-Br-5kh" customClass="AddAddressViewController" customModule="LiitleAmoreNEW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jA7-Br-5kh" customClass="AddAddressViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UBj-ED-HBr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -646,7 +645,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkW-ql-7bQ">
-                                                <rect key="frame" x="203" y="570" width="0.0" height="21"/>
+                                                <rect key="frame" x="203" y="570.5" width="0.0" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" id="nWm-Ig-08H"/>
                                                 </constraints>

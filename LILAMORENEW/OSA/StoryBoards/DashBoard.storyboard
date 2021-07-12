@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c5w-Jg-svK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,7 +38,7 @@
         <!--Little Amore-->
         <scene sceneID="fvF-mp-ftQ">
             <objects>
-                <viewController storyboardIdentifier="dashBoard" modalPresentationStyle="fullScreen" id="1gv-lU-yPf" customClass="DashBoard" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dashBoard" modalPresentationStyle="fullScreen" id="1gv-lU-yPf" customClass="DashBoard" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="utV-qN-BvG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1650"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +109,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bestSellingCell" id="KNq-3a-k8W" customClass="BestSellingCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bestSellingCell" id="KNq-3a-k8W" customClass="BestSellingCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="8" width="195" height="253"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2kh-IG-ZI5">
@@ -321,7 +320,7 @@
                                                     <constraint firstAttribute="height" constant="382" id="IfG-OX-dHk"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="132" id="524-dz-htz" customClass="NewArrivalsTableViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="132" id="524-dz-htz" customClass="NewArrivalsTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="414" height="132"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="524-dz-htz" id="tqg-eH-V3F">
@@ -522,7 +521,7 @@
                                                 </constraints>
                                                 <color key="sectionIndexBackgroundColor" red="0.95686274510000002" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="adsCell" rowHeight="222" id="de4-ZM-JhL" customClass="AdsTableViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="adsCell" rowHeight="222" id="de4-ZM-JhL" customClass="AdsTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="414" height="222"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="de4-ZM-JhL" id="2Tg-b0-wXA">
@@ -616,7 +615,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="Ylx-fL-HA7" customClass="CategoryCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="Ylx-fL-HA7" customClass="CategoryCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0Uc-rD-0k8">
@@ -707,7 +706,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="yUI-oZ-ex0" customClass="DashBoardBannerCell" customModule="OSA">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="yUI-oZ-ex0" customClass="DashBoardBannerCell" customModule="LILAMORENEW">
                                                         <rect key="frame" x="0.0" y="10.5" width="406" height="165"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WZB-pS-9HW">
@@ -886,7 +885,7 @@
         <!--Search List-->
         <scene sceneID="V6l-cj-UC7">
             <objects>
-                <viewController id="0gZ-sm-9LC" customClass="SearchListViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0gZ-sm-9LC" customClass="SearchListViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RLj-Sh-fnp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -901,7 +900,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subCatList" id="ops-bc-yKS" customClass="SearchListCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subCatList" id="ops-bc-yKS" customClass="SearchListCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="176" height="286"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JQJ-dl-zFJ">
@@ -1085,7 +1084,7 @@
         <!--Search View Controller-->
         <scene sceneID="YoB-vx-zuT">
             <objects>
-                <viewController storyboardIdentifier="searchVC" id="N24-tt-lX8" customClass="SearchViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchVC" id="N24-tt-lX8" customClass="SearchViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jTB-gu-95a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1098,15 +1097,15 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="tJc-gu-ggx" customClass="RecentSearchListTableViewCell" customModule="OSA" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="31.5"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="tJc-gu-ggx" customClass="RecentSearchListTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="30.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tJc-gu-ggx" id="g4t-2D-LD4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="31.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-1B-kud">
-                                                            <rect key="frame" x="5" y="5" width="404" height="21.5"/>
+                                                            <rect key="frame" x="5" y="5" width="404" height="20.5"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1153,7 +1152,7 @@
         <!--Category-->
         <scene sceneID="sLR-gi-BwP">
             <objects>
-                <viewController id="3Ic-XA-bWc" customClass="CategoryDetailViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Ic-XA-bWc" customClass="CategoryDetailViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mq0-Zg-Qyo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1168,7 +1167,7 @@
                                     <inset key="sectionInset" minX="7" minY="0.0" maxX="7" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Ol0-ei-9cb" customClass="CategoryAllCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Ol0-ei-9cb" customClass="CategoryAllCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                         <rect key="frame" x="7" y="0.0" width="193" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NF2-Ts-QgV">
@@ -1357,7 +1356,7 @@
         <!--New Arrivals-->
         <scene sceneID="YEa-HD-IbX">
             <objects>
-                <viewController id="5t6-oQ-9bB" customClass="NewArrivalViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5t6-oQ-9bB" customClass="NewArrivalViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3kr-P8-auH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1402,7 +1401,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="17s-Pe-5Ca" customClass="NewArrivalALlCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="17s-Pe-5Ca" customClass="NewArrivalALlCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="176" height="286"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YoK-iK-wU9">
@@ -1619,7 +1618,7 @@
         <!--Product Detail-->
         <scene sceneID="wPf-du-nTV">
             <objects>
-                <viewController id="LVE-5I-ieF" customClass="ProductDetailsViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LVE-5I-ieF" customClass="ProductDetailsViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="79n-Tz-g5w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1678,7 +1677,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colourCell" id="3EW-5F-B1b" customClass="ProductColourCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colourCell" id="3EW-5F-B1b" customClass="ProductColourCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="63" height="65"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kMq-6r-afF">
@@ -1730,7 +1729,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sizeCell" id="pLQ-PG-PQi" customClass="ProductSizeCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sizeCell" id="pLQ-PG-PQi" customClass="ProductSizeCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="3.5" width="59" height="56"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LSy-pL-zJi">
@@ -1926,7 +1925,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="relatedCell" id="V96-su-3tC" customClass="RelatedProductsCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="relatedCell" id="V96-su-3tC" customClass="RelatedProductsCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.5" width="163" height="209"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R0Y-pT-v3i">
@@ -2060,7 +2059,7 @@
                                                     <constraint firstAttribute="height" constant="255" id="V1l-X2-RVW"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="99" id="qy3-61-G0N" customClass="ReviewListTableViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="99" id="qy3-61-G0N" customClass="ReviewListTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="414" height="99"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qy3-61-G0N" id="OfW-a9-XeR">
@@ -2553,7 +2552,7 @@
         <!--Filter-->
         <scene sceneID="Nbk-yJ-294">
             <objects>
-                <viewController id="FlM-ln-lWD" customClass="FilterViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FlM-ln-lWD" customClass="FilterViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cM9-m4-FAU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2577,7 +2576,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="fA2-bs-7Dv" customClass="SelectCategorySegmentCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="fA2-bs-7Dv" customClass="SelectCategorySegmentCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.5" width="148" height="37"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ocY-v2-r4A">
@@ -2662,7 +2661,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sizeCell" id="qJw-XP-2ja" customClass="ProductSizeCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sizeCell" id="qJw-XP-2ja" customClass="ProductSizeCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="3.5" width="59" height="56"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4sh-Bv-OHt">
@@ -2736,7 +2735,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colourCell" id="VYw-OI-5Me" customClass="ProductColourCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colourCell" id="VYw-OI-5Me" customClass="ProductColourCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="63" height="65"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dde-rj-vVo">
@@ -2910,7 +2909,7 @@
         <!--Reviews View Controller-->
         <scene sceneID="z5T-Rv-ynT">
             <objects>
-                <viewController storyboardIdentifier="reviewVC" id="j5j-Bu-3hA" customClass="ReviewsViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="reviewVC" id="j5j-Bu-3hA" customClass="ReviewsViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="br2-3G-51a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3101,7 +3100,7 @@
         <!--Cart -->
         <scene sceneID="uRB-0L-lQZ">
             <objects>
-                <viewController id="dnY-U7-I36" customClass="CartListViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dnY-U7-I36" customClass="CartListViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kuH-Ac-fgo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3110,7 +3109,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="687"/>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="145" id="WzP-Uv-Spa" customClass="CartListTableViewCell" customModule="OSA" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="145" id="WzP-Uv-Spa" customClass="CartListTableViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WzP-Uv-Spa" id="0D7-52-Jhn">
@@ -3324,7 +3323,7 @@
         <!--Check Out-->
         <scene sceneID="96E-th-Tj0">
             <objects>
-                <viewController id="NXB-Fd-Z6g" customClass="CheckOutViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NXB-Fd-Z6g" customClass="CheckOutViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z4l-rq-QwH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3853,7 +3852,7 @@
         <!--Sub Category-->
         <scene sceneID="uWH-3Y-62A">
             <objects>
-                <viewController id="SNT-qn-dQl" customClass="CategorySelectViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SNT-qn-dQl" customClass="CategorySelectViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Neq-UG-2YS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3898,7 +3897,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Sjj-NY-ChN" customClass="SelectCategorySegmentCell" customModule="OSA" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Sjj-NY-ChN" customClass="SelectCategorySegmentCell" customModule="LILAMORENEW" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="125" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eZB-Rr-y6x">
@@ -3976,7 +3975,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subCatList" id="bMM-yj-SdQ" customClass="SubCategoryListCollectionViewCell" customModule="OSA" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subCatList" id="bMM-yj-SdQ" customClass="SubCategoryListCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="176" height="286"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cfV-cP-kBv">
@@ -4192,7 +4191,7 @@
         <!--Menu-->
         <scene sceneID="q2f-4U-ZoG">
             <objects>
-                <viewController storyboardIdentifier="menu" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="bYI-0M-BOt" customClass="Menu" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menu" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="bYI-0M-BOt" customClass="Menu" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T3D-fF-TXi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
