@@ -10,22 +10,16 @@ import UIKit
 
 class PayCODBookingSuccessViewController: UIViewController {
 
+    @IBOutlet weak var orderSuccessLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-//        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        orderSuccessLabel.text = "Your order \(GlobalVariables.shared.order_id) was placedcessc with success"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func to_orderHistryAction(_ sender: Any) {
+        
     }
-    */
-
+    
 }

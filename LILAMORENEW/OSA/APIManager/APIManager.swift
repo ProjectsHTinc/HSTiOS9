@@ -57,7 +57,6 @@ class APIManager: NSObject {
              failureCallback?(responseObject["msg"].string!)
              return
         }
-           
            let OTP =  responseObject["OTP"].string
            let message =  responseObject["msg"].string
            let status =  responseObject["status"].string
@@ -76,11 +75,11 @@ class APIManager: NSObject {
      )
    }
         
-        func callAPIEmailLogin(email_id:String,password:String,mob_key:String,mobile_type:String,onSuccess successCallback: ((_ login: EmailLoginModels) -> Void)?,onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
+        func callAPIEmailLogin(email_id:String,password:String,mob_key:String,mobile_type:String,login_type:String,login_portal:String,onSuccess successCallback: ((_ login: EmailLoginModels) -> Void)?,onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
        // Build URL
            let url = APIURL.BaseUrl_Dev+APIFunctionName.loginEmailUrl
        // Set Parameters
-       let parameters: Parameters =  ["email_id": email_id,"password": password,"mob_key": mob_key,"mobile_type": mobile_type,]
+            let parameters: Parameters =  ["email": email_id,"password": password,"mob_key": mob_key,"mobile_type": mobile_type,"login_type":"Email","login_portal":"App"]
        // call API
        self.createRequest(url, method: .post, headers: nil, parameters: parameters as? [String : String], onSuccess: {(responseObject: JSON) -> Void in
        // Create dictionary
@@ -90,7 +89,6 @@ class APIManager: NSObject {
              failureCallback?(responseObject["msg"].string!)
              return
         }
-           
            let address_id =  responseObject["userData"]["address_id"].string
            let birth_date =  responseObject["userData"]["birth_date"].string
            let customer_id =  responseObject["userData"]["customer_id"].string
@@ -100,7 +98,7 @@ class APIManager: NSObject {
            let newsletter_status =  responseObject["userData"]["newsletter_status"].string
            let phone_number =  responseObject["userData"]["phone_number"].string
            let profile_picture =  responseObject["userData"]["profile_picture"].string
-           let status =  responseObject["userData"]["status"].string
+           let status =  responseObject["status"].string
            let email =  responseObject["userData"]["email"].string
          
            let sendToModel = EmailLoginModels()
@@ -169,7 +167,6 @@ class APIManager: NSObject {
            sendToModel.email = email
         
            successCallback?(sendToModel)
-           
        },
        onFailure: {(errorMessage: String) -> Void in
            failureCallback?(errorMessage)
@@ -2212,19 +2209,52 @@ class APIManager: NSObject {
           failureCallback?(responseObject["msg"].string!)
            return
          }
-    
           let sendToModel = ReturnOrderRequestsModels()
            
            sendToModel.status = status
          
            successCallback?(sendToModel)
-       
          },
           onFailure: {(errorMessage: String) -> Void in
           failureCallback?(errorMessage)
         }
       )
     }
+    
+    func callAPITrackOrder(user_id:String,order_id:String, onSuccess successCallback: ((_ resp: [TrackOrderModels]) -> Void)?,onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
+         // Build URL
+         let url = "https://www.happysanztech.com/shopping/"+APIFunctionName.trackingUrl
+         // Set Parameters
+         let parameters: Parameters =  ["user_id": user_id,"order_id": order_id]
+         // call API
+         self.createRequest(url, method: .post, headers: nil, parameters: parameters as? [String : String], onSuccess: {(responseObject: JSON) -> Void in
+         // Create dictionary
+         print(responseObject)
 
+           guard let status = responseObject["status"].string, status == "success" else{
+               failureCallback?(responseObject["msg"
+               ].string!)
+               return
+         }
+          if let responseDict = responseObject["track_details"].arrayObject
+          {
+                  let toModel = responseDict as! [[String:AnyObject]]
+                  // Create object
+                  var data = [TrackOrderModels]()
+                  for item in toModel {
+                      let single = TrackOrderModels.build(item)
+                      data.append(single)
+                  }
+                  // Fire callback
+                  successCallback?(data)
+          } else {
+              failureCallback?("An error has occured.")
+          }
+         },
+         onFailure: {(errorMessage: String) -> Void in
+             failureCallback?(errorMessage)
+         }
+      )
+     }
 }
 

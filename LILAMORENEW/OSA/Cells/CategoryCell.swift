@@ -9,7 +9,6 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell {
     
-    
     @IBOutlet weak var CategoryImg: UIImageView!
     @IBOutlet weak var catLabel: UILabel!
     

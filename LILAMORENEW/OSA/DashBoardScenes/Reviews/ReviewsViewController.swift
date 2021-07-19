@@ -7,7 +7,6 @@
 //  Copyright © 2021 Happy Sanz Tech. All rights reserved.
 //
 
-
 import UIKit
 
 protocol AddReviewDisplayLogic: class
@@ -15,13 +14,11 @@ protocol AddReviewDisplayLogic: class
     func successFetchedItems(viewModel: AddReviewModel.Fetch.ViewModel)
     func errorFetchingItems(viewModel: AddReviewModel.Fetch.ViewModel)
 }
-
 protocol CheckReviewDisplayLogic: class
 {
     func successFetchedItems(viewModel: CheckReviewModel.Fetch.ViewModel)
     func errorFetchingItems(viewModel: CheckReviewModel.Fetch.ViewModel)
 }
-
 protocol UpdateReviewDisplayLogic: class
 {
     func successFetchedItems(viewModel: UpdateReviewModel.Fetch.ViewModel)
@@ -58,7 +55,6 @@ class ReviewsViewController: UIViewController, AddReviewDisplayLogic, CheckRevie
         buttonThreeOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         buttonFourOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         buttonFiveOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
-        
         interactor1?.fetchItems(request: CheckReviewModel.Fetch.Request(product_id:self.product_id, user_id:GlobalVariables.shared.customer_id))
     }
     
@@ -119,8 +115,7 @@ class ReviewsViewController: UIViewController, AddReviewDisplayLogic, CheckRevie
    //    AddReviewDisplayLogic
     func successFetchedItems(viewModel: AddReviewModel.Fetch.ViewModel) {
         
-        AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: Globals.LoginAlertMessage, complition: {
-            
+        AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: "Review Updated", complition: {
           })
     }
        
@@ -135,7 +130,6 @@ class ReviewsViewController: UIViewController, AddReviewDisplayLogic, CheckRevie
         self.reviewLbl.text = viewModel.comment
         self.reviewId = viewModel.id!
         setRating()
-       
     }
        
     func errorFetchingItems(viewModel: CheckReviewModel.Fetch.ViewModel) {
@@ -169,26 +163,22 @@ class ReviewsViewController: UIViewController, AddReviewDisplayLogic, CheckRevie
     
     @IBAction func buttonTwo(_ sender: Any)
     {
-
         buttonOneOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonTwoOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonThreeOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         buttonFourOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         buttonFiveOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         selectedStars = "2";
-
     }
     
     @IBAction func buttonThree(_ sender: Any)
     {
-        
         buttonOneOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonTwoOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonThreeOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonFourOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         buttonFiveOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         selectedStars = "3";
-
     }
     
     @IBAction func buttonFour(_ sender: Any)
@@ -199,19 +189,16 @@ class ReviewsViewController: UIViewController, AddReviewDisplayLogic, CheckRevie
         buttonFourOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonFiveOutlet.setBackgroundImage(UIImage(named: "star (3)-1"), for: UIControl.State.normal)
         selectedStars = "4";
-
     }
     
     @IBAction func buttonFive(_ sender: Any)
     {
-
         buttonOneOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonTwoOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonThreeOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonFourOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         buttonFiveOutlet.setBackgroundImage(UIImage(named: "star (3)"), for: UIControl.State.normal)
         selectedStars = "5";
-
      }
 }
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7920060C269D4F1F005D1B5B /* TrakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920060B269D4F1F005D1B5B /* TrakingViewController.swift */; };
+		79200655269D9E94005D1B5B /* TrackingInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79200654269D9E93005D1B5B /* TrackingInteracter.swift */; };
+		7920065A269D9ECF005D1B5B /* TrackingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79200659269D9ECF005D1B5B /* TrackingPresenter.swift */; };
+		7920065F269D9EEA005D1B5B /* TrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7920065E269D9EE9005D1B5B /* TrackingModel.swift */; };
+		79200664269D9F65005D1B5B /* TrackingWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79200663269D9F65005D1B5B /* TrackingWorker.swift */; };
+		79200669269DA213005D1B5B /* TrackOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79200668269DA213005D1B5B /* TrackOrderModels.swift */; };
 		792B411B26986D620047076E /* LILAMORENEWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B411A26986D620047076E /* LILAMORENEWTests.swift */; };
 		792B412626986D620047076E /* LILAMORENEWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B412526986D620047076E /* LILAMORENEWUITests.swift */; };
 		792B43B126986DF80047076E /* ReturnRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B413A26986DF50047076E /* ReturnRequestModel.swift */; };
@@ -431,6 +437,11 @@
 		792E95EF269C05900037BB72 /* CCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E95D9269C05900037BB72 /* CCTool.m */; };
 		792E95F0269C05900037BB72 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E95DB269C05900037BB72 /* Base64.m */; };
 		792E96D0269C1EC30037BB72 /* spalsh_screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 792E96CF269C1EC30037BB72 /* spalsh_screen.jpg */; };
+		792E9707269C28860037BB72 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9702269C287F0037BB72 /* Signika-SemiBold.ttf */; };
+		792E9708269C28860037BB72 /* Signika-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9703269C28820037BB72 /* Signika-Medium.ttf */; };
+		792E9709269C28860037BB72 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9704269C28840037BB72 /* Signika-Bold.ttf */; };
+		792E970A269C28860037BB72 /* Signika-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9705269C28850037BB72 /* Signika-Light.ttf */; };
+		792E970B269C28860037BB72 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9706269C28860037BB72 /* Signika-Regular.ttf */; };
 		E59457440828821669E9C049 /* Pods_LILAMORENEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D8DF92F32D17A66CCC4922 /* Pods_LILAMORENEW.framework */; };
 /* End PBXBuildFile section */
 
@@ -452,6 +463,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7920060B269D4F1F005D1B5B /* TrakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrakingViewController.swift; sourceTree = "<group>"; };
+		79200654269D9E93005D1B5B /* TrackingInteracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingInteracter.swift; sourceTree = "<group>"; };
+		79200659269D9ECF005D1B5B /* TrackingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPresenter.swift; sourceTree = "<group>"; };
+		7920065E269D9EE9005D1B5B /* TrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingModel.swift; sourceTree = "<group>"; };
+		79200663269D9F65005D1B5B /* TrackingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingWorker.swift; sourceTree = "<group>"; };
+		79200668269DA213005D1B5B /* TrackOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderModels.swift; sourceTree = "<group>"; };
 		792B410026986D530047076E /* LILAMORENEW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LILAMORENEW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792B411126986D620047076E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		792B411626986D620047076E /* LILAMORENEWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LILAMORENEWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -888,6 +905,11 @@
 		792E95DB269C05900037BB72 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		792E95DC269C05900037BB72 /* CCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTool.h; sourceTree = "<group>"; };
 		792E96CF269C1EC30037BB72 /* spalsh_screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spalsh_screen.jpg; sourceTree = "<group>"; };
+		792E9702269C287F0037BB72 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-SemiBold.ttf"; sourceTree = "<group>"; };
+		792E9703269C28820037BB72 /* Signika-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Medium.ttf"; sourceTree = "<group>"; };
+		792E9704269C28840037BB72 /* Signika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Bold.ttf"; sourceTree = "<group>"; };
+		792E9705269C28850037BB72 /* Signika-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Light.ttf"; sourceTree = "<group>"; };
+		792E9706269C28860037BB72 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.ttf"; sourceTree = "<group>"; };
 		9C84F013CE3A21A9C8D6811E /* Pods-LILAMORENEW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LILAMORENEW.release.xcconfig"; path = "Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW.release.xcconfig"; sourceTree = "<group>"; };
 		B0D8DF92F32D17A66CCC4922 /* Pods_LILAMORENEW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LILAMORENEW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B73C6666316103C2B1BB32 /* Pods-LILAMORENEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LILAMORENEW.debug.xcconfig"; path = "Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW.debug.xcconfig"; sourceTree = "<group>"; };
@@ -919,6 +941,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7920060A269D4ED4005D1B5B /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				7920060B269D4F1F005D1B5B /* TrakingViewController.swift */,
+				79200654269D9E93005D1B5B /* TrackingInteracter.swift */,
+				79200659269D9ECF005D1B5B /* TrackingPresenter.swift */,
+				7920065E269D9EE9005D1B5B /* TrackingModel.swift */,
+				79200663269D9F65005D1B5B /* TrackingWorker.swift */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
 		792B40F726986D530047076E = {
 			isa = PBXGroup;
 			children = (
@@ -949,6 +983,7 @@
 				792B438926986DF70047076E /* AppDelegate.swift */,
 				792B42F426986DF70047076E /* OSA.entitlements */,
 				792E96CF269C1EC30037BB72 /* spalsh_screen.jpg */,
+				792B438F26986DF70047076E /* Fonts */,
 				792B45A22698710B0047076E /* CCAVENUE */,
 				792B413926986DF50047076E /* OSA */,
 				792B411126986D620047076E /* Info.plist */,
@@ -988,7 +1023,6 @@
 				792E9674269C18DB0037BB72 /* NotificationScens */,
 				792B42F926986DF70047076E /* Common */,
 				792B437326986DF70047076E /* CartDetailsScenes */,
-				792B438F26986DF70047076E /* Fonts */,
 				792B434926986DF70047076E /* CheckOutScenes */,
 				792B430026986DF70047076E /* WalletScenes */,
 				792B42E726986DF70047076E /* Extensions */,
@@ -1060,6 +1094,8 @@
 		792B416A26986DF60047076E /* DashBoardScenes */ = {
 			isa = PBXGroup;
 			children = (
+				792B419E26986DF60047076E /* DashBoard */,
+				792B433726986DF70047076E /* DashBoard */,
 				792B416B26986DF60047076E /* CategorySelect */,
 				792B417226986DF60047076E /* AddToCart */,
 				792B417726986DF60047076E /* CheckPincode */,
@@ -1068,7 +1104,6 @@
 				792B418926986DF60047076E /* Categorydetail */,
 				792B418C26986DF60047076E /* NewArrivals */,
 				792B419126986DF60047076E /* Search */,
-				792B419E26986DF60047076E /* DashBoard */,
 				792B41B926986DF60047076E /* WishListAdd */,
 				792B41BE26986DF60047076E /* ProductDetails */,
 				792B41DA26986DF60047076E /* WishListRemove */,
@@ -1082,8 +1117,8 @@
 		792B416B26986DF60047076E /* CategorySelect */ = {
 			isa = PBXGroup;
 			children = (
-				792B416C26986DF60047076E /* CategorySelectModel.swift */,
 				792B416D26986DF60047076E /* CategorySelectViewController.swift */,
+				792B416C26986DF60047076E /* CategorySelectModel.swift */,
 				792B416E26986DF60047076E /* CategorySelectPresenter.swift */,
 				792B416F26986DF60047076E /* CategorySelectInteractor.swift */,
 				792B417026986DF60047076E /* CategorySelectWorker.swift */,
@@ -1195,11 +1230,11 @@
 		792B419E26986DF60047076E /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				792B41A926986DF60047076E /* DashBoard.swift */,
 				792B419F26986DF60047076E /* DashBoardCategory */,
 				792B41A626986DF60047076E /* DashBoardInteractor.swift */,
 				792B41A726986DF60047076E /* DashBoardPresenter.swift */,
 				792B41A826986DF60047076E /* DashBoardModel.swift */,
-				792B41A926986DF60047076E /* DashBoard.swift */,
 				792B41AA26986DF60047076E /* DashBoardWorker.swift */,
 				792B41AB26986DF60047076E /* BestSelling */,
 				792B41B026986DF60047076E /* DashBoardRouter.swift */,
@@ -1266,16 +1301,16 @@
 		792B41BE26986DF60047076E /* ProductDetails */ = {
 			isa = PBXGroup;
 			children = (
-				792B41BF26986DF60047076E /* ProductDetailsInteractor.swift */,
-				792B41C026986DF60047076E /* ProductColour */,
-				792B41C626986DF60047076E /* ProductDetailsModel.swift */,
-				792B41C726986DF60047076E /* ProductSize */,
 				792B41CC26986DF60047076E /* ProductDetailsViewController.swift */,
+				792B41BF26986DF60047076E /* ProductDetailsInteractor.swift */,
+				792B41C626986DF60047076E /* ProductDetailsModel.swift */,
+				792B41D926986DF60047076E /* ProductDetailsPresenter.swift */,
+				792B41D826986DF60047076E /* ProductDetailsRouter.swift */,
+				792B41D726986DF60047076E /* ProductDetailsWorker.swift */,
+				792B41C026986DF60047076E /* ProductColour */,
+				792B41C726986DF60047076E /* ProductSize */,
 				792B41CD26986DF60047076E /* ReviewList */,
 				792B41D226986DF60047076E /* RelatedProducts */,
-				792B41D726986DF60047076E /* ProductDetailsWorker.swift */,
-				792B41D826986DF60047076E /* ProductDetailsRouter.swift */,
-				792B41D926986DF60047076E /* ProductDetailsPresenter.swift */,
 			);
 			path = ProductDetails;
 			sourceTree = "<group>";
@@ -1456,12 +1491,12 @@
 		792B420926986DF60047076E /* ReviewOrder */ = {
 			isa = PBXGroup;
 			children = (
+				792B420F26986DF60047076E /* ReviewOrderViewController.swift */,
 				792B420A26986DF60047076E /* ReviewOrderRouter.swift */,
 				792B420B26986DF60047076E /* ReviewOrderWorker.swift */,
 				792B420C26986DF60047076E /* ReviewOrderIntercter.swift */,
 				792B420D26986DF60047076E /* ReviewOrderModel.swift */,
 				792B420E26986DF60047076E /* ReviewOrderPresenter.swift */,
-				792B420F26986DF60047076E /* ReviewOrderViewController.swift */,
 			);
 			path = ReviewOrder;
 			sourceTree = "<group>";
@@ -1469,10 +1504,10 @@
 		792B421026986DF60047076E /* PayCashOnDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				792B421426986DF60047076E /* PayCODBookingSuccessViewController.swift */,
 				792B421126986DF60047076E /* PayCODModel.swift */,
 				792B421226986DF60047076E /* PayCODWorker.swift */,
 				792B421326986DF60047076E /* PayCODPresenter.swift */,
-				792B421426986DF60047076E /* PayCODBookingSuccessViewController.swift */,
 				792B421526986DF60047076E /* PayCODInteracter.swift */,
 			);
 			path = PayCashOnDelivery;
@@ -1493,8 +1528,8 @@
 		792B421E26986DF60047076E /* AddAddress */ = {
 			isa = PBXGroup;
 			children = (
-				792B421F26986DF60047076E /* AddAddressWorker.swift */,
 				792B422026986DF60047076E /* AddAddressViewController.swift */,
+				792B421F26986DF60047076E /* AddAddressWorker.swift */,
 				792B422126986DF60047076E /* AddAddressPresenter.swift */,
 				792B422226986DF60047076E /* AddAddressModel.swift */,
 				792B422326986DF60047076E /* AddAddressInteracter.swift */,
@@ -1616,6 +1651,7 @@
 				792B42E126986DF70047076E /* AddressModels.swift */,
 				792B42E226986DF70047076E /* CheckOutModels.swift */,
 				792B42E326986DF70047076E /* ProductsModels.swift */,
+				79200668269DA213005D1B5B /* TrackOrderModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1776,12 +1812,11 @@
 		792B433126986DF70047076E /* EmailLogin */ = {
 			isa = PBXGroup;
 			children = (
-				792B433226986DF70047076E /* EmailLoginInteracter.swift */,
 				792B433326986DF70047076E /* EmailLoginViewController.swift */,
+				792B433226986DF70047076E /* EmailLoginInteracter.swift */,
 				792B433426986DF70047076E /* EmailLoginModel.swift */,
 				792B433526986DF70047076E /* EmailLoginWorker.swift */,
 				792B433626986DF70047076E /* EmailLoginRouter.swift */,
-				792B433726986DF70047076E /* DashBoard */,
 				792B433926986DF70047076E /* EmailLoginPresenter.swift */,
 			);
 			path = EmailLogin;
@@ -1792,15 +1827,16 @@
 			children = (
 				792B433826986DF70047076E /* SideMenu.swift */,
 			);
-			path = DashBoard;
+			name = DashBoard;
+			path = ../MainScenes/EmailLogin/DashBoard;
 			sourceTree = "<group>";
 		};
 		792B433A26986DF70047076E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				792B434026986DF70047076E /* LoginViewController.swift */,
 				792B433C26986DF70047076E /* LoginModel.swift */,
 				792B433D26986DF70047076E /* LoginInteractor.swift */,
-				792B434026986DF70047076E /* LoginViewController.swift */,
 				792B434126986DF70047076E /* loginPresenter.swift */,
 				792B434226986DF70047076E /* LoginWorker.swift */,
 				792B434326986DF70047076E /* LoginRouter.swift */,
@@ -1953,6 +1989,11 @@
 				792B439026986DF70047076E /* Montserrat-MediumItalic.otf */,
 				792B439126986DF70047076E /* Montserrat-Bold.otf */,
 				792B439226986DF70047076E /* MontserratAlternates-LightItalic.otf */,
+				792E9704269C28840037BB72 /* Signika-Bold.ttf */,
+				792E9705269C28850037BB72 /* Signika-Light.ttf */,
+				792E9703269C28820037BB72 /* Signika-Medium.ttf */,
+				792E9706269C28860037BB72 /* Signika-Regular.ttf */,
+				792E9702269C287F0037BB72 /* Signika-SemiBold.ttf */,
 				792B439326986DF70047076E /* MontserratAlternates-Medium.otf */,
 				792B439426986DF70047076E /* Montserrat-BoldItalic.otf */,
 				792B439526986DF70047076E /* MontserratAlternates-MediumItalic.otf */,
@@ -2064,6 +2105,7 @@
 				792B421A26986DF60047076E /* OrderHistoryDetailsViewController.swift */,
 				792E968C269C1AF30037BB72 /* InTransit */,
 				792E9685269C1A7E0037BB72 /* DeleiveredOrders */,
+				7920060A269D4ED4005D1B5B /* Tracking */,
 				792E9696269C1B8B0037BB72 /* ReturnReasonList */,
 			);
 			path = OrderHistoryScenes;
@@ -2072,9 +2114,9 @@
 		792E9685269C1A7E0037BB72 /* DeleiveredOrders */ = {
 			isa = PBXGroup;
 			children = (
+				792B438526986DF70047076E /* DeliveredOrdersViewController.swift */,
 				792B416926986DF60047076E /* DeliveredOrdersInteracter.swift */,
 				792B434726986DF70047076E /* DeliveredOrdersModel.swift */,
-				792B438526986DF70047076E /* DeliveredOrdersViewController.swift */,
 				792B43A926986DF70047076E /* DeliveredOrdersPresenter.swift */,
 				792B43AE26986DF70047076E /* DeliveredOrdersWorker.swift */,
 			);
@@ -2291,10 +2333,12 @@
 				792B455326986DF90047076E /* MontserratAlternates-Medium.otf in Resources */,
 				792B43BA26986DF80047076E /* BookingSuccess.storyboard in Resources */,
 				792B43BC26986DF80047076E /* ReviewOrder.storyboard in Resources */,
+				792E970B269C28860037BB72 /* Signika-Regular.ttf in Resources */,
 				792B455226986DF90047076E /* MontserratAlternates-LightItalic.otf in Resources */,
 				792B447126986DF90047076E /* Packaging.log in Resources */,
 				792B43B626986DF80047076E /* Address.storyboard in Resources */,
 				792B43B926986DF80047076E /* WishList.storyboard in Resources */,
+				792E9709269C28860037BB72 /* Signika-Bold.ttf in Resources */,
 				792B43B826986DF80047076E /* Wallet.storyboard in Resources */,
 				792B43B426986DF80047076E /* Profile.storyboard in Resources */,
 				792B455426986DF90047076E /* Montserrat-BoldItalic.otf in Resources */,
@@ -2305,7 +2349,9 @@
 				792B455A26986DF90047076E /* Montserrat-SemiBold.otf in Resources */,
 				792B43B726986DF80047076E /* Main.storyboard in Resources */,
 				792B447426986DF90047076E /* DistributionSummary.plist in Resources */,
+				792E9707269C28860037BB72 /* Signika-SemiBold.ttf in Resources */,
 				792B455026986DF90047076E /* Montserrat-MediumItalic.otf in Resources */,
+				792E970A269C28860037BB72 /* Signika-Light.ttf in Resources */,
 				792B455926986DF90047076E /* MontserratAlternates-Light.otf in Resources */,
 				792B447226986DF90047076E /* OSA.ipa in Resources */,
 				792B43BD26986DF80047076E /* OrderHistory.storyboard in Resources */,
@@ -2317,6 +2363,7 @@
 				792B455726986DF90047076E /* Montserrat-Regular.otf in Resources */,
 				792B449426986DF90047076E /* Assets.xcassets in Resources */,
 				792B455526986DF90047076E /* MontserratAlternates-MediumItalic.otf in Resources */,
+				792E9708269C28860037BB72 /* Signika-Medium.ttf in Resources */,
 				792B43BB26986DF80047076E /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2443,6 +2490,7 @@
 				792B447E26986DF90047076E /* AddressListModel.swift in Sources */,
 				792B445526986DF90047076E /* UpdateReviewPresenter.swift in Sources */,
 				792B43E726986DF80047076E /* AddToCartWorker.swift in Sources */,
+				79200655269D9E94005D1B5B /* TrackingInteracter.swift in Sources */,
 				792B43F626986DF80047076E /* WishListInteracter.swift in Sources */,
 				792B452E26986DF90047076E /* RemovePromoCodeInteracter.swift in Sources */,
 				792B44EA26986DF90047076E /* OTPViewController.swift in Sources */,
@@ -2482,6 +2530,7 @@
 				792B446F26986DF90047076E /* AddAddressModel.swift in Sources */,
 				792B453226986DF90047076E /* DeliveryAddressRouter.swift in Sources */,
 				792B453D26986DF90047076E /* CartListInteracter.swift in Sources */,
+				79200669269DA213005D1B5B /* TrackOrderModels.swift in Sources */,
 				792B447026986DF90047076E /* AddAddressInteracter.swift in Sources */,
 				792B443126986DF80047076E /* ReletedProductsWorker.swift in Sources */,
 				792B451C26986DF90047076E /* OrderDetailsWorker.swift in Sources */,
@@ -2499,6 +2548,7 @@
 				792B44E226986DF90047076E /* AddMoneyToWalletWorker.swift in Sources */,
 				792B43E426986DF80047076E /* AddtoCartPresenter.swift in Sources */,
 				792B44F526986DF90047076E /* ForgotPasswordRouter.swift in Sources */,
+				7920065A269D9ECF005D1B5B /* TrackingPresenter.swift in Sources */,
 				792B442026986DF80047076E /* WishListAddWorker.swift in Sources */,
 				792B445F26986DF90047076E /* ReviewOrderPresenter.swift in Sources */,
 				792B448C26986DF90047076E /* CheckPasswordInteracter.swift in Sources */,
@@ -2549,6 +2599,7 @@
 				792E95EB269C05900037BB72 /* CCInitView.swift in Sources */,
 				792B455F26986DF90047076E /* LocalizationSystem.swift in Sources */,
 				792B441226986DF80047076E /* BestSellingInteracter.swift in Sources */,
+				7920065F269D9EEA005D1B5B /* TrackingModel.swift in Sources */,
 				792B44B826986DF90047076E /* CartModels.swift in Sources */,
 				792B448E26986DF90047076E /* ChangePasswordInteracter.swift in Sources */,
 				792B440F26986DF80047076E /* DashBoardModel.swift in Sources */,
@@ -2570,6 +2621,7 @@
 				792B446426986DF90047076E /* PayCODBookingSuccessViewController.swift in Sources */,
 				792B448D26986DF90047076E /* ChangePasswordModel.swift in Sources */,
 				792B451826986DF90047076E /* PlaceOrderWorker.swift in Sources */,
+				79200664269D9F65005D1B5B /* TrackingWorker.swift in Sources */,
 				792B43D726986DF80047076E /* CategoryAllCollectionViewCell.swift in Sources */,
 				792B44E326986DF90047076E /* AddMoneyToWalletPresenter.swift in Sources */,
 				792B446E26986DF90047076E /* AddAddressPresenter.swift in Sources */,
@@ -2630,6 +2682,7 @@
 				792B44F926986DF90047076E /* SignUpWorker.swift in Sources */,
 				792B44B426986DF90047076E /* ReviewModels.swift in Sources */,
 				792B444526986DF80047076E /* SizeListInteracter.swift in Sources */,
+				7920060C269D4F1F005D1B5B /* TrakingViewController.swift in Sources */,
 				792B456026986DF90047076E /* AlertController.swift in Sources */,
 				792B441526986DF80047076E /* BestSellingModel.swift in Sources */,
 				792B453926986DF90047076E /* CartDeleteModel.swift in Sources */,

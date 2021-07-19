@@ -25,6 +25,7 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
     var interactor1: DeliveredOrdersBusinessLogic?
     var ORDER_ID = [String]()
     var order_id = String()
+    var selectedIndex = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,9 +90,12 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
         
         let data = displayedDeliveredOrdersData[indexPath.row]
         cell.orderId.text = "Order Id : \(ORDER_ID[indexPath.row])"
-        cell.date.text = "Order date : \(data.purchase_date!)"
+        cell.date.text = data.purchase_date!
         cell.price.text = "₹ \(data.total_amount!)"
         cell.status.text = data.status
+        if self.selectedIndex == indexPath.row {
+              cell.backgroundColor = UIColor.clear  // Highlight color
+           }
 //        cell.productImage.sd_setImage(with: URL(string: data.order_cover_img!), placeholderImage: UIImage(named: ""))
 //        cell.viewProducts.tag = indexPath.row
 //        cell.viewProducts.addTarget(self, action: #selector(viewProductsButtonClicked(sender:)), for: .touchUpInside)

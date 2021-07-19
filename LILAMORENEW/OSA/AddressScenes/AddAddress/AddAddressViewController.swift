@@ -56,7 +56,7 @@ class AddAddressViewController: UIViewController,CLLocationManagerDelegate, AddA
         
         self.nameTextField.text = slectedFullName
         self.mobileNumberTextField.text = slectedMobile_number
-        self.addressline1TextField.text = slectedhouse_no + "," + slectedStreet
+        self.addressline1TextField.text = slectedhouse_no + " " + slectedStreet
         self.addressline2TextField.text = ""
         self.landMarkTextField.text = slectedLandmark
         self.stateTextField.text = slectedState
@@ -66,9 +66,7 @@ class AddAddressViewController: UIViewController,CLLocationManagerDelegate, AddA
 //        AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: "Get current location to tap the button ", complition: {
 //
 //          }
-//
         self.hideKeyboardWhenTappedAround()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -139,7 +137,6 @@ class AddAddressViewController: UIViewController,CLLocationManagerDelegate, AddA
         if dataFromList == "dataFromList" {
             
             interactor2?.fetchItems(request: UpdateAddressModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id, country_id:"1",state:self.stateTextField.text!,city:self.cityTextField.text!,pincode:self.pincodeTextField.text!,house_no:self.addressline1TextField.text!,street:self.addressline2TextField.text!,landmark:self.landMarkTextField.text!,full_name:self.nameTextField.text!,mobile_number:self.mobileNumberTextField.text,email_address:GlobalVariables.shared.email_Id,alternative_mobile_number:"", address_type:"1",address_id:slectedId ,status:""))
-      
         }
         else
         {
@@ -168,7 +165,6 @@ class AddAddressViewController: UIViewController,CLLocationManagerDelegate, AddA
     func errorFetchingItems(viewModel: UpdateAddressModel.Fetch.ViewModel) {
             
     }
-        
 
     func getAddressFromLatLon(pdblLatitude: String, withLongitude pdblLongitude: String)
     {
@@ -228,25 +224,21 @@ class AddAddressViewController: UIViewController,CLLocationManagerDelegate, AddA
 
         guard self.nameTextField.text?.count != 0  else {
             AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: "Name is Empty", complition: {
-                
               })
              return false
          }
         guard self.addressline1TextField.text?.count != 0  else {
             AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: "address is Empty", complition: {
-                
               })
              return false
          }
         guard self.mobileNumberTextField.text?.count != 0  else {
             AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: "MobileNumber is Empty", complition: {
-                
               })
              return false
          }
         guard self.landMarkTextField.text?.count != 0  else {
             AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: "landmark is Empty", complition: {
-                
               })
              return false
          }

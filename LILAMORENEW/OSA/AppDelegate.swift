@@ -27,18 +27,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         UINavigationBar.appearance().barTintColor = UIColor(red: 192.0/255.0, green: 229.0/255.0, blue: 230.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.black
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-       
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Signika-Medium", size: 18)!]
+        
         ApplicationDelegate.shared.application(
             application,
             didFinishLaunchingWithOptions: launchOptions
         )
-        GIDSignIn.sharedInstance().clientID = "53258605089-4ek4mhnegrpdlish2vuh5pqo3uib16td.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = "779794251139-luk261uflj085efmdgqvr78b7eplae4i.apps.googleusercontent.com"
         application.registerForRemoteNotifications()
         registerForPushNotifications()
         registerNotificationCategories()
         return true
     }
-          
+    
     func application(_ app: UIApplication,open url: URL,options:[UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
 
         ApplicationDelegate.shared.application(

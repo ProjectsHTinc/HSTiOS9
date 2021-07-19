@@ -2,15 +2,17 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pub-f7-uvy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-SemiBold.otf">
-            <string>Montserrat-SemiBold</string>
+        <array key="Signika-Bold.ttf">
+            <string>Signika-Bold</string>
+        </array>
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -32,7 +34,7 @@
         <!--Result View Controller-->
         <scene sceneID="KW0-cQ-9HC">
             <objects>
-                <viewController storyboardIdentifier="bookingSuccess" id="pub-f7-uvy" customClass="CCResultViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bookingSuccess" id="pub-f7-uvy" customClass="CCResultViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uKo-n2-5dR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +49,7 @@
                                             <constraint firstAttribute="width" constant="200" id="ly1-ud-BLM"/>
                                             <constraint firstAttribute="height" constant="33" id="sIu-3k-YWW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
                                         <state key="normal" title="Back to Wallet">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -60,7 +62,7 @@
                                             <action selector="doneAction:" destination="pub-f7-uvy" eventType="touchUpInside" id="e2a-GT-ivk"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2470" translatesAutoresizingMaskIntoConstraints="NO" id="N4p-Sm-1LA">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 2487" translatesAutoresizingMaskIntoConstraints="NO" id="N4p-Sm-1LA">
                                         <rect key="frame" x="102" y="30" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="ZFN-Y1-vMh"/>
@@ -72,7 +74,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="68" id="kyj-H8-2zu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
+                                        <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="22"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -81,7 +83,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="7zV-Dw-Uob"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -123,7 +125,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 2470" width="130" height="130"/>
+        <image name="Group 2487" width="130" height="130"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

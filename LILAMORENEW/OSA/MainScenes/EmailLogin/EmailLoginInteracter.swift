@@ -28,7 +28,7 @@ class EmailLoginInteractor: EmailLoginBusinessLogic, EmailLoginDataStore
            self.presenter?.presentFetchResults(resp: EmailLoginModel.Fetch.Response(testObj: nil, isError:true, message: "emptyy" ))
         }
         worker = EmailLoginWorker()
-        worker!.fetch(email_id:request.email_id!,password:request.password!,mob_key:request.mob_key!,mobile_type:request.mobile_type!, onSuccess: { (resp) in
+        worker!.fetch(email_id:request.email_id!,password:request.password!,mob_key:request.mob_key!,mobile_type:request.mobile_type!,login_type:request.login_type!,login_portal:request.login_portal!, onSuccess: { (resp) in
             self.presenter?.presentFetchResults(resp: EmailLoginModel.Fetch.Response(testObj: resp.testObj, isError: false, message: nil))
         }) { (errorMessage) in
             self.presenter?.presentFetchResults(resp: EmailLoginModel.Fetch.Response(testObj: errorMessage.testObj, isError: true, message: "An error Occured"))

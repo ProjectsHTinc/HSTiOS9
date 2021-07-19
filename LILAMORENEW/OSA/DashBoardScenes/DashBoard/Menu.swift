@@ -3,14 +3,12 @@
 //  OSA
 //
 //  Created by Happy Sanz Tech on 11/02/21.
-//
 
 import UIKit
 import SDWebImage
 
 class Menu: UIViewController, ProfileDetailsDisplayLogic {
    
-    
     @IBOutlet weak var userPic: UIImageView!
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var userMailidLbl: UILabel!
@@ -24,20 +22,17 @@ class Menu: UIViewController, ProfileDetailsDisplayLogic {
 
         // Do any additional setup after loading the view.
         interactor1?.fetchItems(request: ProfileDetailsModel.Fetch.Request( user_id:GlobalVariables.shared.customer_id))
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+ 
 //        self.userPic.image(named:)
         // Save if it was hidden initially
         self.navigationBarWasHidden = self.navigationController?.isNavigationBarHidden ?? false
         // Hide the Navigation Bar
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-       
     }
-    
    
     @IBAction func signInAction(_ sender: Any) {
         
@@ -105,7 +100,6 @@ class Menu: UIViewController, ProfileDetailsDisplayLogic {
             GlobalVariables.shared.email_Id = ""
             
             UserDefaults.standard.clearUserData()
-            
             self.reNew()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {

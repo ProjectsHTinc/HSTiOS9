@@ -20,6 +20,18 @@
         <array key="Montserrat-SemiBold.otf">
             <string>Montserrat-SemiBold</string>
         </array>
+        <array key="Signika-Bold.ttf">
+            <string>Signika-Bold</string>
+        </array>
+        <array key="Signika-Medium.ttf">
+            <string>Signika-Medium</string>
+        </array>
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
+        </array>
+        <array key="Signika-SemiBold.ttf">
+            <string>Signika-SemiBold</string>
+        </array>
         <array key="TimesNewRoman.ttf">
             <string>.SFUI-Regular</string>
         </array>
@@ -49,24 +61,24 @@
                                                             <constraint firstAttribute="width" constant="128" id="e1U-u5-hk9"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WelcomeTo Easy Shop Wallet..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOf-mV-x9p">
-                                                        <rect key="frame" x="11" y="95" width="267" height="150"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WelcomeTo Little Amore Wallet..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOf-mV-x9p">
+                                                        <rect key="frame" x="23" y="95" width="255" height="150"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="267" id="FM0-IL-srG"/>
+                                                            <constraint firstAttribute="width" constant="255" id="FM0-IL-srG"/>
                                                             <constraint firstAttribute="height" constant="150" id="dqv-8P-zcA"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="33"/>
-                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="38"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.65098039220000004" green="0.023529411760000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.75294117647058822" green="0.89803921568627454" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="OOf-mV-x9p" firstAttribute="top" secondItem="NC6-xt-VRT" secondAttribute="top" constant="95" id="3QX-2g-VzX"/>
                                                     <constraint firstItem="fuT-5U-dVq" firstAttribute="top" secondItem="NC6-xt-VRT" secondAttribute="top" constant="8" id="68O-Ah-nib"/>
                                                     <constraint firstAttribute="trailing" secondItem="fuT-5U-dVq" secondAttribute="trailing" id="AQ2-nx-tqP"/>
                                                     <constraint firstAttribute="bottom" secondItem="OOf-mV-x9p" secondAttribute="bottom" constant="21" id="UP2-c3-WIu"/>
-                                                    <constraint firstItem="OOf-mV-x9p" firstAttribute="leading" secondItem="NC6-xt-VRT" secondAttribute="leading" constant="11" id="Ynz-JZ-LW6"/>
+                                                    <constraint firstItem="OOf-mV-x9p" firstAttribute="leading" secondItem="NC6-xt-VRT" secondAttribute="leading" constant="23" id="Ynz-JZ-LW6"/>
                                                     <constraint firstAttribute="bottom" secondItem="fuT-5U-dVq" secondAttribute="bottom" constant="21" id="noZ-KZ-Obw"/>
                                                     <constraint firstItem="fuT-5U-dVq" firstAttribute="leading" secondItem="OOf-mV-x9p" secondAttribute="trailing" constant="8" symbolic="YES" id="qia-Sr-N1F"/>
                                                     <constraint firstAttribute="height" constant="266" id="zVU-h7-DOl"/>
@@ -89,7 +101,7 @@
                                                             <constraint firstAttribute="width" constant="150" id="p0w-Qj-NDm"/>
                                                             <constraint firstAttribute="height" constant="40" id="q6Z-Um-lOq"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="17"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="   Add Money" image="add">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,7 +126,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24.5" id="gdh-6a-5ca"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="21"/>
                                                         <color key="textColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -123,7 +135,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="37" id="fSR-jU-Ii3"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -132,7 +144,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24.5" id="5Ta-fj-zBA"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -165,21 +177,21 @@
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="26" id="hjU-fJ-Rae"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                                                            <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="16"/>
                                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbD-Xa-m4x">
                                                                             <rect key="frame" x="8" y="33" width="399" height="16"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                                                            <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="13"/>
                                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEW-2l-Ur0">
                                                                             <rect key="frame" x="8" y="52" width="399" height="13"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                                                            <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="12"/>
                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -189,7 +201,7 @@
                                                                                 <constraint firstAttribute="width" constant="104" id="tDx-qh-691"/>
                                                                                 <constraint firstAttribute="height" constant="26" id="tyP-RW-6fM"/>
                                                                             </constraints>
-                                                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                                                            <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="15"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -311,7 +323,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="1dW-pL-vRj"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="20"/>
                                                 <color key="textColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -320,7 +332,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24.5" id="GYj-a8-Wiy"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="19"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -339,7 +351,7 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlt-hq-kWy">
                                                         <rect key="frame" x="34" y="0.0" width="364" height="62"/>
-                                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="19"/>
+                                                        <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="19"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -391,7 +403,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="oW6-UJ-FFe"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -417,14 +429,14 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfu-86-WxA">
                                 <rect key="frame" x="10" y="858" width="393" height="41"/>
-                                <color key="backgroundColor" red="0.65098039220000004" green="0.023529411760000001" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.75294117647058822" green="0.89803921568627454" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="393" id="hpK-N9-sA7"/>
                                     <constraint firstAttribute="height" constant="41" id="wGK-kK-ElQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="18"/>
                                 <state key="normal" title="Add Money">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">

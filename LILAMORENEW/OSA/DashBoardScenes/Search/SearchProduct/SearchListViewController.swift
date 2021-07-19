@@ -73,7 +73,7 @@ class SearchListViewController: UIViewController,SearchListDisplayLogic,UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        
-        let cell = searchListCollectionViewCell.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SearchListCollectionViewCell
+        let cell = searchListCollectionViewCell.dequeueReusableCell(withReuseIdentifier: "subCatList", for: indexPath) as! SearchListCollectionViewCell
             let data = displayedSearchListData[indexPath.row]
             cell.productTitlelabel.text = data.product_name
             cell.MrpPriceLabel.text = "₹\(data.prod_mrp_price!)"

@@ -4,7 +4,6 @@
 //
 //  Created by Happy Sanz Tech on 04/03/21.
 //
-
 import UIKit
 import GMStepper
 import SDWebImage
@@ -39,14 +38,14 @@ class CartListViewController: UIViewController,UITableViewDelegate,UITableViewDa
     var idArr = [String]()
     var selectedQuantity = String()
     var quantityArr = [Double]()
+    var quantityUpdated = Bool()
     var displayedCartListData: [CartListModel.Fetch.ViewModel.DisplayedCartListData] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         interactor?.fetchItems(request: CartListModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id))
-       
-        // Do any additional setup after loading the view.
+        quantityUpdated = false
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -92,11 +91,13 @@ class CartListViewController: UIViewController,UITableViewDelegate,UITableViewDa
     @IBAction func continueAction(_ sender: Any) {
         
         self.performSegue(withIdentifier: "to_checkout", sender: self)
-        
     }
     
 //    Cart List
     func successFetchedItems(viewModel: CartListModel.Fetch.ViewModel) {
+        
+        if quantityUpdated == false {
+            
         displayedCartListData = viewModel.displayedCartListData
         self.totalAmountLbl.text = "₹\(GlobalVariables.shared.total_cart_payment)"
         
@@ -109,9 +110,12 @@ class CartListViewController: UIViewController,UITableViewDelegate,UITableViewDa
             
             self.quantityArr.append(quantity!)
             self.idArr.append(id!)
-            
         }
         self.cartListTableView.reloadData()
+        }
+        else {
+            self.totalAmountLbl.text = "₹\(GlobalVariables.shared.total_cart_payment)"
+        }
     }
     
     func errorFetchingItems(viewModel: CartListModel.Fetch.ViewModel) {
@@ -148,7 +152,6 @@ class CartListViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func successFetchedItems(viewModel: QuantityUpdateModel.Fetch.ViewModel) {
         if viewModel.msg == "Product Quantity Updated" {
             
-           
 //        interactor?.fetchItems(request: CartListModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id))
 //            self.cartListTableView.reloadData()
         }
@@ -190,6 +193,8 @@ class CartListViewController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     @objc func stepperValueChanged(stepper: GMStepper){
+        
+        quantityUpdated = true
         let buttonClicked = stepper.tag
         print(buttonClicked)
          let selectedIndex = Int(buttonClicked)

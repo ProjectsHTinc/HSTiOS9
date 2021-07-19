@@ -2,21 +2,17 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EeG-pa-Ewv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-ExtraBold.otf">
-            <string>Montserrat-ExtraBold</string>
+        <array key="Signika-Bold.ttf">
+            <string>Signika-Bold</string>
         </array>
-        <array key="Montserrat-Medium.otf">
-            <string>Montserrat-Medium</string>
-        </array>
-        <array key="Montserrat-SemiBold.otf">
-            <string>Montserrat-SemiBold</string>
+        <array key="Signika-Medium.ttf">
+            <string>Signika-Medium</string>
         </array>
     </customFonts>
     <scenes>
@@ -40,7 +36,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="hkj-0F-nRj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <state key="normal" title="   Change Password" image="padlock">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -54,7 +50,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="b1q-bs-jfX"/>
                                     <constraint firstAttribute="height" constant="22" id="m0f-cm-doC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="-2" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="  About us" image="Icons-24px-Navigation">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +61,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="y0N-9G-CbS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <state key="normal" title="   Privacy &amp; Security" image="shield-with-lock">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
@@ -76,7 +72,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="SND-Ir-cqL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <state key="normal" title="   Help and Support" image="headphones">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -147,7 +143,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="g7s-Mf-pdF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <state key="normal" title="Receive Notifications">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -169,7 +165,7 @@
                                     <constraint firstAttribute="height" constant="25" id="TEO-HS-Wy2"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="onTintColor" red="0.98431372549019602" green="0.80000000000000004" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" systemColor="systemGreenColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -181,7 +177,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="37d-Lj-poV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <state key="normal" title="Receive Newsletters">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -193,7 +189,7 @@
                                     <constraint firstAttribute="height" constant="25" id="98Z-iv-QD9"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="onTintColor" red="0.98431372549019602" green="0.80000000000000004" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.27450980390000002" green="0.6705882353" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="5"/>
@@ -266,26 +262,26 @@
         <!--Change Password-->
         <scene sceneID="PL3-sD-JuS">
             <objects>
-                <viewController id="fgE-dy-x1h" customClass="ChangePasswordViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fgE-dy-x1h" customClass="ChangePasswordViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdn-4u-h9F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r25-hl-WM9">
-                                <rect key="frame" x="10" y="218" width="404" height="25"/>
+                                <rect key="frame" x="20" y="218" width="394" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="HfU-Cg-SFA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A78-r2-GXc">
-                                <rect key="frame" x="10" y="418" width="404" height="25"/>
+                                <rect key="frame" x="20" y="418" width="394" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="5Ie-gg-7R4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -294,8 +290,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="tzc-df-Nu2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="19"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your New password must be different from previous used password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7os-5H-huf">
@@ -303,7 +299,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HrE-53-dmY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -313,7 +309,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="26X-UB-qln"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="19"/>
                                 <state key="normal" title="Reset Password">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -333,11 +329,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh5-Yk-49i">
-                                <rect key="frame" x="10" y="320" width="404" height="25"/>
+                                <rect key="frame" x="20" y="320" width="394" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="8A6-fG-FN9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -371,7 +367,7 @@
                         <viewLayoutGuide key="safeArea" id="IRM-tm-IvH"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="A78-r2-GXc" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="10" id="3yg-di-Omy"/>
+                            <constraint firstItem="A78-r2-GXc" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="20" id="3yg-di-Omy"/>
                             <constraint firstItem="ZGx-d8-AiC" firstAttribute="leading" secondItem="Gdn-4u-h9F" secondAttribute="leading" constant="20" id="4dx-aW-vPr"/>
                             <constraint firstAttribute="trailing" secondItem="r25-hl-WM9" secondAttribute="trailing" id="4yX-cv-oxo"/>
                             <constraint firstItem="A78-r2-GXc" firstAttribute="top" secondItem="ZGx-d8-AiC" secondAttribute="bottom" constant="16" id="5i4-fz-Txo"/>
@@ -379,21 +375,21 @@
                             <constraint firstItem="gh5-Yk-49i" firstAttribute="top" secondItem="wJj-9b-4gn" secondAttribute="bottom" constant="20" id="GYC-9T-1c0"/>
                             <constraint firstItem="7os-5H-huf" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="3" id="IjX-ZU-zwU"/>
                             <constraint firstItem="IRM-tm-IvH" firstAttribute="trailing" secondItem="MOv-cs-ush" secondAttribute="trailing" constant="20" id="JBa-Mb-gHz"/>
-                            <constraint firstItem="gh5-Yk-49i" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="10" id="JXN-Ry-p7W"/>
+                            <constraint firstItem="gh5-Yk-49i" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="20" id="JXN-Ry-p7W"/>
                             <constraint firstItem="E0h-gB-gZu" firstAttribute="top" secondItem="IRM-tm-IvH" secondAttribute="top" constant="30" id="Jcn-WI-PIU"/>
                             <constraint firstItem="MOv-cs-ush" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="20" id="Vrx-6W-wtf"/>
                             <constraint firstItem="pmV-xN-eni" firstAttribute="top" secondItem="MOv-cs-ush" secondAttribute="bottom" constant="29" id="Xd5-D8-B0q"/>
                             <constraint firstItem="gh5-Yk-49i" firstAttribute="trailing" secondItem="IRM-tm-IvH" secondAttribute="trailing" id="ZUa-cp-CUd"/>
                             <constraint firstItem="r25-hl-WM9" firstAttribute="top" secondItem="7os-5H-huf" secondAttribute="bottom" constant="15" id="cZ1-vb-ScF"/>
                             <constraint firstItem="E0h-gB-gZu" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="3" id="d5d-he-ibv"/>
-                            <constraint firstItem="A78-r2-GXc" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="10" id="erU-fG-dAd"/>
+                            <constraint firstItem="A78-r2-GXc" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="20" id="erU-fG-dAd"/>
                             <constraint firstItem="pmV-xN-eni" firstAttribute="leading" secondItem="Gdn-4u-h9F" secondAttribute="leading" constant="20" id="i4g-PL-xzq"/>
                             <constraint firstItem="IRM-tm-IvH" firstAttribute="trailing" secondItem="pmV-xN-eni" secondAttribute="trailing" constant="20" id="lMJ-4n-POk"/>
                             <constraint firstItem="MOv-cs-ush" firstAttribute="top" secondItem="A78-r2-GXc" secondAttribute="bottom" constant="12" id="lMa-Hb-YTe"/>
                             <constraint firstItem="ZGx-d8-AiC" firstAttribute="top" secondItem="gh5-Yk-49i" secondAttribute="bottom" constant="12" id="mfG-UL-c3M"/>
                             <constraint firstItem="IRM-tm-IvH" firstAttribute="trailing" secondItem="wJj-9b-4gn" secondAttribute="trailing" constant="20" id="nOp-Gl-jXB"/>
                             <constraint firstItem="7os-5H-huf" firstAttribute="top" secondItem="E0h-gB-gZu" secondAttribute="bottom" constant="10" id="qvp-1F-ucG"/>
-                            <constraint firstItem="r25-hl-WM9" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="10" id="sM2-L4-ORl"/>
+                            <constraint firstItem="r25-hl-WM9" firstAttribute="leading" secondItem="IRM-tm-IvH" secondAttribute="leading" constant="20" id="sM2-L4-ORl"/>
                             <constraint firstAttribute="trailing" secondItem="A78-r2-GXc" secondAttribute="trailing" id="tTc-ll-g8H"/>
                             <constraint firstItem="IRM-tm-IvH" firstAttribute="trailing" secondItem="ZGx-d8-AiC" secondAttribute="trailing" constant="20" id="vrl-ZT-PbY"/>
                             <constraint firstAttribute="trailing" secondItem="7os-5H-huf" secondAttribute="trailing" constant="3" id="w9k-yc-heH"/>
@@ -422,6 +418,9 @@
         <image name="shield-with-lock" width="11" height="12.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -230,8 +230,8 @@ extension FilterViewController {
 
                 if selectedIndex == indexPath.row
                 {
-                    cell.contentView.backgroundColor = UIColor(red: 251.0/255.0, green: 204.0/255.0, blue: 188.0/255.0, alpha: 1.0)
-                    cell.catLabel.textColor = UIColor.black
+                    cell.contentView.backgroundColor = UIColor(red: 239.0/255.0, green: 117.0/255.0, blue: 113.0/255.0, alpha: 1.0)
+                    cell.catLabel.textColor = UIColor.white
                 }
                 else
                 {

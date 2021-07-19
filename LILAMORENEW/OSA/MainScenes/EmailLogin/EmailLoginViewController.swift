@@ -15,10 +15,11 @@ protocol EmailLoginDisplayLogic: class
     func errorFetchingItems(viewModel: EmailLoginModel.Fetch.ViewModel)
 }
 
-class EmailLoginViewController: UIViewController,GIDSignInDelegate, EmailLoginDisplayLogic{
+class EmailLoginViewController: UIViewController,GIDSignInDelegate, EmailLoginDisplayLogic,GoogleIntegrationDisplayLogic {
     
     var interactor: EmailLoginBusinessLogic?
     var router: (NSObjectProtocol & EmailLoginRoutingLogic & EmailLoginDataPassing)?
+    var interactor1: GoogleIntegrationBusinessLogic?
     
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var signInButton: GIDSignInButton!
@@ -28,8 +29,8 @@ class EmailLoginViewController: UIViewController,GIDSignInDelegate, EmailLoginDi
         super.viewDidLoad()
         
         self.hideKeyboardWhenTappedAround()
+        GIDSignIn.sharedInstance().delegate = self
 //        view.bindToKeyboard()
-       
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -56,6 +57,13 @@ class EmailLoginViewController: UIViewController,GIDSignInDelegate, EmailLoginDi
         presenter.viewController = viewController
         router.viewController = viewController
         router.dataStore = interactor
+        
+        let viewController1 = self
+        let interactor1 = GoogleIntegrationInteractor()
+        let presenter1 = GoogleIntegrationPresenter()
+        viewController1.interactor1 = interactor1
+        interactor1.presenter1 = presenter1
+        presenter1.viewController1 = viewController1
     }
     
     func successFetchedItems(viewModel: EmailLoginModel.Fetch.ViewModel) {
@@ -89,7 +97,7 @@ class EmailLoginViewController: UIViewController,GIDSignInDelegate, EmailLoginDi
         guard CheckValuesAreEmpty () else {
                    return
         }
-        interactor?.fetchItems(request: EmailLoginModel.Fetch.Request(email_id :self.emailTextfield.text,password:self.passwordTextField.text,mob_key:"5352eefa98e3d96b0b77bd0cb35ac455f9fc62ad8fda3ddc10542efcc67b8ce4" ,mobile_type:"2"))
+        interactor?.fetchItems(request: EmailLoginModel.Fetch.Request(email_id :self.emailTextfield.text,password:self.passwordTextField.text,mob_key:"5352eefa98e3d96b0b77bd0cb35ac455f9fc62ad8fda3ddc10542efcc67b8ce4" ,mobile_type:"2",login_type:"Email", login_portal:"App"))
     }
   
     @IBAction func continueWithGoogleAction(_ sender: Any) {
@@ -120,7 +128,6 @@ class EmailLoginViewController: UIViewController,GIDSignInDelegate, EmailLoginDi
               })
              return false
          }
-            
           return true
     }
     
@@ -147,6 +154,41 @@ class EmailLoginViewController: UIViewController,GIDSignInDelegate, EmailLoginDi
          print(givenName!)
          print(familyName!)
          print(email!)
-          // ...
+        
+        let deviceToken = UserDefaults.standard.object(forKey: UserDefaultsKey.deviceTokenKey.rawValue) ?? ""
+        print("The device token is \(deviceToken)")
+        
+        interactor1?.fetchItems(request:GoogleIntegrationModel.Fetch.Request(email :email,first_name:fullName, last_name:"" ,mobile_type:"2",mob_key :deviceToken as? String,login_type:"Gplus", login_portal:"App"))
+    }
+    
+    func successFetchedItems(viewModel: GoogleIntegrationModel.Fetch.ViewModel) {
+        
+        print(viewModel.phone_number!)
+        if viewModel.status == "success" {
+           
+            UserDefaults.standard.set(viewModel.customer_id!, forKey: UserDefaultsKey.customer_idkey.rawValue)
+            GlobalVariables.shared.customer_id = UserDefaults.standard.object(forKey: UserDefaultsKey.customer_idkey.rawValue) as! String
+            
+            UserDefaults.standard.set(viewModel.profile_picture!, forKey: UserDefaultsKey.profile_picturekey.rawValue)
+            GlobalVariables.shared.profile_picture = UserDefaults.standard.object(forKey: UserDefaultsKey.profile_picturekey.rawValue) as! String
+            
+            UserDefaults.standard.set(viewModel.phone_number!, forKey: UserDefaultsKey.phone_numberKey.rawValue)
+            GlobalVariables.shared.phone_number = UserDefaults.standard.object(forKey: UserDefaultsKey.phone_numberKey.rawValue) as! String
+            
+            UserDefaults.standard.set(viewModel.first_name!, forKey: UserDefaultsKey.first_nameKey.rawValue)
+            GlobalVariables.shared.first_name = UserDefaults.standard.object(forKey: UserDefaultsKey.first_nameKey.rawValue) as! String
+            
+            UserDefaults.standard.set(viewModel.last_name!, forKey: UserDefaultsKey.last_namekey.rawValue)
+            GlobalVariables.shared.last_name = UserDefaults.standard.object(forKey: UserDefaultsKey.last_namekey.rawValue) as! String
+            
+            UserDefaults.standard.set(viewModel.email!, forKey: UserDefaultsKey.email_idkey.rawValue)
+            GlobalVariables.shared.email_Id = UserDefaults.standard.object(forKey: UserDefaultsKey.email_idkey.rawValue) as! String
+
+        self.performSegue(withIdentifier: "to_dashBoard", sender: self)
+        }
+    }
+    
+    func errorFetchingItems(viewModel: GoogleIntegrationModel.Fetch.ViewModel) {
+        
     }
 }

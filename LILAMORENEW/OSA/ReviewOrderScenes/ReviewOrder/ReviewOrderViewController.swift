@@ -55,7 +55,6 @@ class ReviewOrderViewController: UIViewController, ReviewOrderDisplayLogic, PayC
         self.itemsLbl.text = self.items
         self.offerLbl.text = self.offer
         self.totalPriceLbl.text = self.totalPrice
-        
         self.nameLbl.text = self.name
         self.phoneNumlbl.text = self.phoneNum
         self.houseNumLbl.text = self.houseNum
@@ -112,7 +111,6 @@ class ReviewOrderViewController: UIViewController, ReviewOrderDisplayLogic, PayC
     func errorFetchingItems(viewModel: ReviewOrderModel.Fetch.ViewModel) {
         
     }
-    
 //    PayCOD DisplayLogic
     func successFetchedItems(viewModel: PayCODModel.Fetch.ViewModel) {
         
@@ -126,7 +124,6 @@ class ReviewOrderViewController: UIViewController, ReviewOrderDisplayLogic, PayC
         
     }
 }
-
 
 extension ReviewOrderViewController: UITableViewDelegate,UITableViewDataSource {
         
@@ -171,8 +168,7 @@ extension ReviewOrderViewController: UITableViewDelegate,UITableViewDataSource {
         if (segue.identifier == "order_success")
         {
             _ = segue.destination as! PayCODBookingSuccessViewController
-          
         }
     }
 }
-
+//order_success

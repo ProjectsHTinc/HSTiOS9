@@ -21,7 +21,6 @@ protocol OrderInfoDetailsDisplayLogic: class
 }
 
 class OrderHistoryDetailsViewController: UIViewController, OrderCartDetailsDisplayLogic, DeliveredOrdersDisplayLogic,OrderInfoDetailsDisplayLogic {
-    
    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var orderIdlbl: UILabel!
@@ -62,7 +61,6 @@ class OrderHistoryDetailsViewController: UIViewController, OrderCartDetailsDispl
         interactor?.fetchItems(request: OrderCartDetailsModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id,order_id:self.order_id))
         interactor2?.fetchItems(request: OrderInfoDetailsModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id,order_id:self.order_id))
         interactor1?.fetchItems(request: DeliveredOrdersModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id,status:"Deliverd"))
-
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -102,6 +100,13 @@ class OrderHistoryDetailsViewController: UIViewController, OrderCartDetailsDispl
        
     }
     
+    @IBAction func trackPakageAction(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "toTrack", sender: self)
+    }
+    
+    
+    
     func successFetchedItems(viewModel: OrderCartDetailsModel.Fetch.ViewModel) {
   
         displayedOrderCartDetailsData = viewModel.displayedOrderCartDetailsData
@@ -116,7 +121,6 @@ class OrderHistoryDetailsViewController: UIViewController, OrderCartDetailsDispl
             self.productPrice.append(prodPrice!)
         }
             self.tableView.reloadData()
-        
     }
     
     func errorFetchingItems(viewModel: OrderCartDetailsModel.Fetch.ViewModel) {
@@ -137,10 +141,7 @@ class OrderHistoryDetailsViewController: UIViewController, OrderCartDetailsDispl
                 self.streetlbl.text = data.street
                 self.cityLbl.text = data.city
                 self.pincodelbl.text = data.pincode
-      
-            
-            self.order_id.append(order_Id!)
-            
+                self.order_id = order_Id!
         }
     }
     
@@ -159,9 +160,7 @@ class OrderHistoryDetailsViewController: UIViewController, OrderCartDetailsDispl
             self.offerLbl.text = data.promo_amount
             self.totalLbl.text = "₹ \(data.total_amount!)"
             self.payMethodLbl.text = data.payment_status
-        
         }
-        
     }
     
     func errorFetchingItems(viewModel: OrderInfoDetailsModel.Fetch.ViewModel) {
@@ -221,5 +220,11 @@ extension OrderHistoryDetailsViewController: UITableViewDelegate,UITableViewData
             vc.productPrice = self.selectedProdPrice
             
         }
+        else if (segue.identifier == "toTrack")
+        {
+            let vc = segue.destination as! TrakingViewController
+            vc.order_id = self.order_id
+        }
     }
 }
+

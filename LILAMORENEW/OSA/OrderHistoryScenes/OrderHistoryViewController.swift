@@ -25,7 +25,17 @@ class OrderHistoryViewController: UIViewController {
         deleviredOrderView.alpha  = 1
         transitView.alpha   = 0
         searchTextfield.setCorner(radius: 25)
+//        navigationController?.navigationBar.barStyle = UIColor.(red: 192.0/255.0, green: 229.0/255.0, blue: 230.0/255.0, alpha: 1.0)
         self.hideKeyboardWhenTappedAround()
+        self.setNavigationBar()
+    }
+    
+    func setNavigationBar() {
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
     }
     
 //    override func viewDidLayoutSubviews() {

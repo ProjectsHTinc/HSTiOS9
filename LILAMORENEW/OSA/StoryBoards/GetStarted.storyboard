@@ -2,28 +2,27 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cIc-Bn-nhK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Bold.otf">
-            <string>Montserrat-Bold</string>
+        <array key="Signika-Bold.ttf">
+            <string>Signika-Bold</string>
         </array>
-        <array key="Montserrat-Medium.otf">
-            <string>Montserrat-Medium</string>
+        <array key="Signika-Medium.ttf">
+            <string>Signika-Medium</string>
         </array>
-        <array key="Montserrat-SemiBold.otf">
-            <string>Montserrat-SemiBold</string>
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
         </array>
     </customFonts>
     <scenes>
         <!--On Boarding View Controller-->
         <scene sceneID="B8g-h2-DzL">
             <objects>
-                <viewController id="cIc-Bn-nhK" customClass="OnBoardingViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cIc-Bn-nhK" customClass="OnBoardingViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BeN-2m-pUe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +41,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="2sZ-vM-3Ku"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -53,7 +52,7 @@
                                                     <constraint firstAttribute="width" constant="334" id="QLH-YT-kOd"/>
                                                     <constraint firstAttribute="height" constant="50" id="jsh-tB-VCP"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="18"/>
                                                 <state key="normal" title="Get Started">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -72,7 +71,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="PHj-Zk-yQU"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="32"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

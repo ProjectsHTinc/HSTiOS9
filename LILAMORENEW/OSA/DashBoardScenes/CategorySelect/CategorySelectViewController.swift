@@ -22,7 +22,6 @@ protocol SubCategoryListDisplayLogic: class
 
 class CategorySelectViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,CategorySelectDisplayLogic,SubCategoryListDisplayLogic {
     
-   
     @IBOutlet weak var categoryCount: UILabel!
     @IBOutlet weak var selectCategeryCollectionView: UICollectionView!
     @IBOutlet weak var subCategoryListCollectionView: UICollectionView!
@@ -51,16 +50,12 @@ class CategorySelectViewController: UIViewController,UICollectionViewDelegate,UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         interactor?.fetchItems(request: CategorySelectModel.Fetch.Request(cat_id:id))
         searchTextfield.setCorner(radius: 25)
         interactor2?.fetchItems(request: SubCategoryListModel.Fetch.Request(cat_id:id,sub_cat_id:"All",user_id:"1"))
     }
-    
-//    override func viewDidLayoutSubviews(){
-//
-//        searchBarView.layerGradient(startPoint: .left, endPoint: .right, colorArray: [UIColor(red: 189.0/255.0, green: 6.0/255.0, blue: 33.0/255.0, alpha: 1.0).cgColor, UIColor(red: 95.0/255.0, green: 3.0/255.0, blue: 17.0/255.0, alpha: 1.0).cgColor], type: .axial)
-//    }
-    
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -101,7 +96,6 @@ class CategorySelectViewController: UIViewController,UICollectionViewDelegate,UI
         
         self.performSegue(withIdentifier: "to_filter", sender: self)
     }
-    
     
     func successFetchedItems(viewModel: CategorySelectModel.Fetch.ViewModel) {
         
@@ -171,8 +165,8 @@ class CategorySelectViewController: UIViewController,UICollectionViewDelegate,UI
 
                 if selectedIndex == indexPath.row
                 {
-                    cell.contentView.backgroundColor = UIColor(red: 251.0/255.0, green: 204.0/255.0, blue: 188.0/255.0, alpha: 1.0)
-                    cell.catLabel.textColor = UIColor.black
+                    cell.contentView.backgroundColor = UIColor(red: 239.0/255.0, green: 117.0/255.0, blue: 113.0/255.0, alpha: 1.0)
+                    cell.catLabel.textColor = UIColor.white
                 }
                 else
                 {

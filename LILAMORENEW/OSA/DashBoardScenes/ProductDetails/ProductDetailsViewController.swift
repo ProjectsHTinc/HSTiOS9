@@ -106,6 +106,7 @@ class ProductDetailsViewController: UIViewController, ProductSizeDisplayLogic, P
         self.selectedcolourId = "0"
         self.hideKeyboardWhenTappedAround()
         self.setProductRating ()
+        self.colourFoundLabel.text = "No Colour Found"
         // Do any additional setup after loading the view.
     }
     

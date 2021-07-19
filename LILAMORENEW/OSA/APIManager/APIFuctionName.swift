@@ -63,7 +63,7 @@ struct APIFunctionName {
     static let listFilterDetailsUrl = "mobileapi/get_filter"
     static let resultFilterDetailsUrl = "mobileapi/filter_result"
     static let notificationListUrl = "mobileapi/offer_list"
-
+    static let trackingUrl = "mobileapi/track_order"
     
 }
 

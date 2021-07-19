@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zy4-VJ-ySC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -10,30 +9,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Bold.otf">
-            <string>Montserrat-Bold</string>
+        <array key="Signika-Medium.ttf">
+            <string>Signika-Medium</string>
         </array>
-        <array key="Montserrat-Medium.otf">
-            <string>Montserrat-Medium</string>
+        <array key="Signika-Regular.ttf">
+            <string>Signika-Regular</string>
         </array>
-        <array key="Montserrat-SemiBold.otf">
-            <string>Montserrat-SemiBold</string>
+        <array key="Signika-SemiBold.ttf">
+            <string>Signika-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
         <!--WishLists-->
         <scene sceneID="5HR-E0-bVy">
             <objects>
-                <viewController storyboardIdentifier="wishList" id="Zy4-VJ-ySC" customClass="WishListViewController" customModule="OSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wishList" id="Zy4-VJ-ySC" customClass="WishListViewController" customModule="LILAMORENEW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBF-G3-RbT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFd-ww-CNM">
-                                <rect key="frame" x="0.0" y="88" width="414" height="52"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="22"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What are you looking for?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zNx-UZ-itm">
-                                        <rect key="frame" x="20" y="30" width="374" height="45"/>
+                                        <rect key="frame" x="20" y="0.0" width="374" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="EXq-6a-dgF"/>
@@ -49,37 +48,37 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.75294117647058822" green="0.89803921568627454" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="zNx-UZ-itm" firstAttribute="top" secondItem="gFd-ww-CNM" secondAttribute="top" constant="30" id="659-NQ-qRf"/>
+                                    <constraint firstItem="zNx-UZ-itm" firstAttribute="top" secondItem="gFd-ww-CNM" secondAttribute="top" id="659-NQ-qRf"/>
                                     <constraint firstAttribute="width" constant="414" id="HOC-ru-F68"/>
                                     <constraint firstItem="zNx-UZ-itm" firstAttribute="leading" secondItem="gFd-ww-CNM" secondAttribute="leading" constant="20" id="PQG-n5-8LR"/>
-                                    <constraint firstAttribute="height" constant="52" id="bR7-m8-zce"/>
+                                    <constraint firstAttribute="height" constant="22" id="bR7-m8-zce"/>
                                     <constraint firstAttribute="trailing" secondItem="zNx-UZ-itm" secondAttribute="trailing" constant="20" id="ymx-K6-cr4"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shr-6e-wsg">
-                                <rect key="frame" x="7" y="175" width="407" height="35"/>
+                                <rect key="frame" x="7" y="145" width="407" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="GkB-bn-7Sw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mrh-8O-pbt">
-                                <rect key="frame" x="0.0" y="218" width="414" height="644"/>
+                                <rect key="frame" x="0.0" y="188" width="414" height="674"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="7" minimumInteritemSpacing="7" id="bm5-lR-sN9">
-                                    <size key="itemSize" width="176" height="286"/>
+                                    <size key="itemSize" width="176" height="269"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kIm-Wl-j8p" customClass="WishListCollectionViewCell" customModule="OSA" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="0.0" width="176" height="286"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kIm-Wl-j8p" customClass="WishListCollectionViewCell" customModule="LILAMORENEW" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="176" height="269"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NxX-mQ-sH6">
-                                            <rect key="frame" x="0.0" y="0.0" width="176" height="286"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="269"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iyX-JA-Lbk">
@@ -95,21 +94,21 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoL-eA-47W">
-                                                    <rect key="frame" x="8" y="216" width="167" height="40"/>
+                                                    <rect key="frame" x="8" y="216" width="167" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="txa-pS-m1n"/>
+                                                        <constraint firstAttribute="height" constant="22" id="txa-pS-m1n"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Signika-Medium" family="Signika" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHu-gF-Ldj">
-                                                    <rect key="frame" x="8" y="264" width="8.5" height="14"/>
+                                                    <rect key="frame" x="8" y="246" width="8" height="18"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="14" id="nwo-3l-XMu"/>
+                                                        <constraint firstAttribute="height" constant="18" id="nwo-3l-XMu"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="15"/>
+                                                    <color key="textColor" red="0.93725490199999995" green="0.45882352939999999" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nrt-oj-79A">
@@ -159,14 +158,14 @@
                                             <constraints>
                                                 <constraint firstItem="KoL-eA-47W" firstAttribute="top" secondItem="nrt-oj-79A" secondAttribute="bottom" constant="8" symbolic="YES" id="4ek-CL-MKN"/>
                                                 <constraint firstAttribute="trailing" secondItem="KoL-eA-47W" secondAttribute="trailing" constant="1" id="KJg-nr-aH4"/>
-                                                <constraint firstAttribute="bottom" secondItem="EHu-gF-Ldj" secondAttribute="bottom" constant="8" id="KYc-Ja-aUc"/>
                                                 <constraint firstItem="nrt-oj-79A" firstAttribute="leading" secondItem="NxX-mQ-sH6" secondAttribute="leading" constant="12" id="LkG-Uz-dH0"/>
                                                 <constraint firstItem="nrt-oj-79A" firstAttribute="top" secondItem="iyX-JA-Lbk" secondAttribute="bottom" constant="10" id="McF-JB-j3C"/>
                                                 <constraint firstItem="EHu-gF-Ldj" firstAttribute="leading" secondItem="NxX-mQ-sH6" secondAttribute="leading" constant="8" id="N4f-mr-TMP"/>
+                                                <constraint firstAttribute="bottom" secondItem="EHu-gF-Ldj" secondAttribute="bottom" constant="5" id="Rbz-rn-ulM"/>
                                                 <constraint firstItem="iyX-JA-Lbk" firstAttribute="top" secondItem="NxX-mQ-sH6" secondAttribute="top" constant="8" id="UJr-sR-JkB"/>
                                                 <constraint firstItem="KoL-eA-47W" firstAttribute="leading" secondItem="NxX-mQ-sH6" secondAttribute="leading" constant="8" id="Wey-Gd-W52"/>
                                                 <constraint firstItem="iyX-JA-Lbk" firstAttribute="leading" secondItem="NxX-mQ-sH6" secondAttribute="leading" id="cH6-XB-YBy"/>
-                                                <constraint firstItem="EHu-gF-Ldj" firstAttribute="top" secondItem="KoL-eA-47W" secondAttribute="bottom" constant="8" symbolic="YES" id="tcl-lL-Xlu"/>
+                                                <constraint firstItem="EHu-gF-Ldj" firstAttribute="top" secondItem="KoL-eA-47W" secondAttribute="bottom" constant="8" id="tcl-lL-Xlu"/>
                                                 <constraint firstAttribute="trailing" secondItem="iyX-JA-Lbk" secondAttribute="trailing" id="wq7-FX-Sg6"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
@@ -175,7 +174,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="176" height="286"/>
+                                        <size key="customSize" width="176" height="269"/>
                                         <connections>
                                             <outlet property="discoutPricelabel" destination="EHu-gF-Ldj" id="jDR-QX-Jew"/>
                                             <outlet property="productTitleLabel" destination="KoL-eA-47W" id="mDq-5e-IYF"/>

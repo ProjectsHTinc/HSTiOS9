@@ -17,6 +17,8 @@ struct EmailLoginModel{
             var password : String?
             var mob_key : String?
             var mobile_type : String?
+            var login_type : String?
+            var login_portal : String?
         }
         
         struct Response

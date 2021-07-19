@@ -57,7 +57,6 @@ class DashBoard: UIViewController, DashBoardDisplayLogic,CategoryDisplayLogic,Be
     @IBOutlet weak var searchTextfield: UITextField!
 //    @IBOutlet weak var leftbutton: UIBarButtonItem!
     
-    
     var index = 0
     var inForwardDirection = true
     var timer: Timer?
@@ -96,7 +95,6 @@ class DashBoard: UIViewController, DashBoardDisplayLogic,CategoryDisplayLogic,Be
         self.hideKeyboardWhenTappedAround()
         self.sideMenuButton()
         self.fromSearchText = "to_searchList"
-       
 //        leftbutton.image = UIImage(named:"recent-2")?.withRenderingMode(.alwaysOriginal)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: ""), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage(named: "")
@@ -147,13 +145,12 @@ class DashBoard: UIViewController, DashBoardDisplayLogic,CategoryDisplayLogic,Be
 //        searchBarView.layerGradient(startPoint: .left, endPoint: .right, colorArray: [UIColor(red: 189.0/255.0, green: 6.0/255.0, blue: 33.0/255.0, alpha: 1.0).cgColor, UIColor(red: 95.0/255.0, green: 3.0/255.0, blue: 17.0/255.0, alpha: 1.0).cgColor], type: .axial)
 //    }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        view.alpha = 1
         self.navigationController?.navigationBar.shouldRemoveShadow(true)
     }
-    
-    
+ 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
