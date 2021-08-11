@@ -17,7 +17,6 @@ class NewArrivalViewController: UIViewController,UICollectionViewDelegate,UIColl
     var interactor2: BestSellingBusinessLogic?
     var displayedNewArrivalsData: [NewArrivalsModel.Fetch.ViewModel.DisplayedNewArrivalsData] = []
     var displayedBestSellingData: [BestSellingModel.Fetch.ViewModel.DisplayedBestSellingData] = []
-    
     var product_id = String()
     var fromDashboardData = String()
     
@@ -25,15 +24,17 @@ class NewArrivalViewController: UIViewController,UICollectionViewDelegate,UIColl
         super.viewDidLoad()
        
         if fromDashboardData == "to_newArrival" {
-            interactor2?.fetchItems(request: BestSellingModel.Fetch.Request(user_id:"1"))
-            self.title = "New Arrivals"
+            interactor3?.fetchItems(request: NewArrivalsModel.Fetch.Request(user_id:""))
+            self.navigationItem.title = "New Arrivals"
         }
         else
         {
-            interactor3?.fetchItems(request: NewArrivalsModel.Fetch.Request(user_id:"1"))
+            interactor2?.fetchItems(request: BestSellingModel.Fetch.Request(user_id:""))
             self.navigationItem.title = "Best Selling"
         }
-        
+        if let myImage = UIImage(named: "search"){
+            searchTextfield.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.clear, colorBorder: UIColor.clear)
+        }
         searchTextfield.setCorner(radius: 25)
     }
     
@@ -74,27 +75,16 @@ class NewArrivalViewController: UIViewController,UICollectionViewDelegate,UIColl
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if fromDashboardData == "to_newArrival" {
-            
-            return displayedBestSellingData.count
-            
+            return displayedNewArrivalsData.count
         }
         else {
-            return displayedNewArrivalsData.count
+            return displayedBestSellingData.count
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if fromDashboardData == "to_newArrival" {
-        let cell = newArrivalCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NewArrivalALlCollectionViewCell
-        let newArrivaldata = displayedBestSellingData[indexPath.row]
-        cell.newArrivalImage.sd_setImage(with: URL(string: newArrivaldata.product_cover_img!), placeholderImage: UIImage(named: ""))
-        cell.productTitlelabel.text = newArrivaldata.product_name
-        cell.MrpPriceLabel.text = "₹\(newArrivaldata.prod_actual_price!)"
-        cell.actualPriceLabel.text = "₹\(newArrivaldata.prod_mrp_price!)"
-            return cell
-        }
-        else {
             let cell = newArrivalCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NewArrivalALlCollectionViewCell
             let newArrivaldata = displayedNewArrivalsData[indexPath.row]
             cell.newArrivalImage.sd_setImage(with: URL(string: newArrivaldata.product_cover_img!), placeholderImage: UIImage(named: ""))
@@ -103,19 +93,28 @@ class NewArrivalViewController: UIViewController,UICollectionViewDelegate,UIColl
             cell.actualPriceLabel.text = "₹\(newArrivaldata.prod_mrp_price!)"
             return cell
         }
+        else {
+            let cell = newArrivalCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NewArrivalALlCollectionViewCell
+            let newArrivaldata = displayedBestSellingData[indexPath.row]
+            cell.newArrivalImage.sd_setImage(with: URL(string: newArrivaldata.product_cover_img!), placeholderImage: UIImage(named: ""))
+            cell.productTitlelabel.text = newArrivaldata.product_name
+            cell.MrpPriceLabel.text = "₹\(newArrivaldata.prod_actual_price!)"
+            cell.actualPriceLabel.text = "₹\(newArrivaldata.prod_mrp_price!)"
+                return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
        
         if fromDashboardData == "to_newArrival" {
             
-            let data = displayedBestSellingData[indexPath.row]
+            let data = displayedNewArrivalsData[indexPath.row]
             self.product_id = data.id!
             self.performSegue(withIdentifier: "to_productDetails", sender: self)
         }
         else
         {
-            let data = displayedNewArrivalsData[indexPath.row]
+            let data = displayedBestSellingData[indexPath.row]
             self.product_id = data.id!
             self.performSegue(withIdentifier: "to_productDetails", sender: self)
         }

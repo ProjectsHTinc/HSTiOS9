@@ -41,6 +41,7 @@ struct AddressListModel{
             var street : String?
             var address_mode : String?
             
+            
             }
               var displayedAddressListData: [DisplayedAddressListData]
     

@@ -70,9 +70,11 @@ class CheckOutViewController: UIViewController,DeliveryAddressDisplayLogic, Prom
     var pincode = [String]()
     var city = [String]()
     var houseNum = [String]()
+    var addressModeArr = [String]()
 //    var addressId = [String]()
     
     var addressId = String()
+    var addressIdArr = [String]()
     var orderId = String()
     var items = String()
     var offer = String()
@@ -192,7 +194,7 @@ class CheckOutViewController: UIViewController,DeliveryAddressDisplayLogic, Prom
         self.userCity.removeAll()
         self.userName.removeAll()
         self.userPhoneNumber.removeAll()
-        self.addressId.removeAll()
+        self.addressIdArr.removeAll()
         self.pincode.removeAll()
         
         for data in displayedDeliveryAddressData {
@@ -202,15 +204,23 @@ class CheckOutViewController: UIViewController,DeliveryAddressDisplayLogic, Prom
             let id = data.id
             let pincode = data.pincode
             let houseNum = data.house_no
+            let addressMode = data.address_mode
             
+           
             self.houseNum.append(houseNum!)
             self.userCity.append(city!)
             self.pincode.append(pincode!)
             self.userName.append(name!)
             self.userPhoneNumber.append(phoneNumber!)
-            self.addressId.append(id!)
+            self.addressModeArr.append(addressMode!)
             
+            if addressModeArr.contains("1") {
+                self.addressIdArr.append(id!)
+                self.addressId = addressIdArr[0]
+            }
         }
+           
+            
          print("Project\(addressId)")
          self.nameLbl.text = userName[0]
          self.addressLbl.text = houseNum[0]

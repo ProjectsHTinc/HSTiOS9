@@ -137,7 +137,7 @@ extension ReviewOrderViewController: UITableViewDelegate,UITableViewDataSource {
         let cell = reviewOrderTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ReviewOrderTableViewCell
         let data = displayedReviewOrderData[indexPath.row]
         cell.productImage.sd_setImage(with: URL(string: data.product_cover_img!), placeholderImage: UIImage(named: ""))
-//        cell.delivery.text = data.category_name
+        cell.delivery.text = data.status
         cell.quantity.text = "Quantity - \(data.quantity!)"
         cell.MrpPrice.text = "₹\(data.total_amount!)"
         cell.productName.text = data.category_name

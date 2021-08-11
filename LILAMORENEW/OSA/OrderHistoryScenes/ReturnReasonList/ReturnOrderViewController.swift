@@ -28,7 +28,8 @@ class ReturnOrderViewController: UIViewController, ReturnReasonListDisplayLogic,
     @IBOutlet weak var priceLbl: UILabel!
     
     var displayedReturnReasonListData: [ReturnReasonListModel.Fetch.ViewModel.DisplayedReturnReasonListData] = []
-    
+    var selectedIndex = IndexPath(row: -1, section: 0)
+
     var interactor: ReturnReasonListBusinessLogic?
     var interactor1: ReturnOrderRequestBusinessLogic?
     var id = String()
@@ -129,6 +130,9 @@ extension ReturnOrderViewController: UITableViewDelegate,UITableViewDataSource {
         let data = displayedReturnReasonListData[indexPath.row]
 //        cell.status.text = data.order_id
         cell.reasonText.text = data.question
+//        if selectedIndex == indexPath { cell.backgroundColor = UIColor.white }
+        cell.selectionStyle = .none
+//        cell.selectionStyle = .none
 //        cell.selectButton.tag = indexPath.row
 //        cell.selectButton.addTarget(self, action: #selector(returnOrderButtonClicked(sender:)), for: .touchUpInside)
         
@@ -136,14 +140,13 @@ extension ReturnOrderViewController: UITableViewDelegate,UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         let selected_id = idArr[indexPath.row]
         self.id = selected_id
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-
+     
         tableView.cellForRow(at: indexPath)?.accessoryType = .none
     }
     

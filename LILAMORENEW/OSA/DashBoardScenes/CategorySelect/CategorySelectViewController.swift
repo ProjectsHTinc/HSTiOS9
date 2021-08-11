@@ -53,6 +53,9 @@ class CategorySelectViewController: UIViewController,UICollectionViewDelegate,UI
         
         interactor?.fetchItems(request: CategorySelectModel.Fetch.Request(cat_id:id))
         searchTextfield.setCorner(radius: 25)
+        if let myImage = UIImage(named: "search"){
+            searchTextfield.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.clear, colorBorder: UIColor.clear)
+        }
         interactor2?.fetchItems(request: SubCategoryListModel.Fetch.Request(cat_id:id,sub_cat_id:"All",user_id:"1"))
     }
 

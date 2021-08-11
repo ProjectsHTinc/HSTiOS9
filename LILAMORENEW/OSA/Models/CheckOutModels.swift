@@ -22,7 +22,8 @@ class DeliveryAddressModels : NSObject {
     var product_name : String?
     var state : String?
     var street : String?
-   
+    var address_mode : String?
+    
      // MARK: Instance Method
      func loadFromDictionary(_ dict: [String: AnyObject])
      {
@@ -64,6 +65,9 @@ class DeliveryAddressModels : NSObject {
         }
         if let data = dict["street"] as? String {
             self.street = data
+        }
+        if let data = dict["address_mode"] as? String {
+            self.address_mode = data
         }
     }
     

@@ -484,10 +484,11 @@ extension DashBoard : UITableViewDelegate,UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectItemAt indexPath: IndexPath) {
-       
-        if tableView == tableView {
-            let data = displayedAdvertisementData[indexPath.row]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if tableView == self.tableView
+        {
+            let data = displayedNewArrivalsData[indexPath.row]
             self.product_id = data.id!
             self.performSegue(withIdentifier: "newArrival_product", sender: self)
         }
@@ -527,7 +528,6 @@ extension DashBoard : UITableViewDelegate,UITableViewDataSource {
         }
     }
 }
-
 
 extension DashBoard : UICollectionViewDelegate,UICollectionViewDataSource,UITextFieldDelegate {
         

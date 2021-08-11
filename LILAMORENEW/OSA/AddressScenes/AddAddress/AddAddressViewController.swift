@@ -56,15 +56,14 @@ class AddAddressViewController: UIViewController,CLLocationManagerDelegate, AddA
         
         self.nameTextField.text = slectedFullName
         self.mobileNumberTextField.text = slectedMobile_number
-        self.addressline1TextField.text = slectedhouse_no + " " + slectedStreet
-        self.addressline2TextField.text = ""
+//        self.addressline1TextField.text = slectedhouse_no + " " + slectedStreet
+//        self.addressline2TextField.text = ""
         self.landMarkTextField.text = slectedLandmark
         self.stateTextField.text = slectedState
         self.cityTextField.text = slectedcity
         self.pincodeTextField.text = slectedPincode
 
 //        AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: "Get current location to tap the button ", complition: {
-//
 //          }
         self.hideKeyboardWhenTappedAround()
     }
@@ -168,7 +167,6 @@ class AddAddressViewController: UIViewController,CLLocationManagerDelegate, AddA
 
     func getAddressFromLatLon(pdblLatitude: String, withLongitude pdblLongitude: String)
     {
-        
         var center : CLLocationCoordinate2D = CLLocationCoordinate2D()
         let lat: Double = Double("\(pdblLatitude)")!
         let lon: Double = Double("\(pdblLongitude)")!

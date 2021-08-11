@@ -15,7 +15,6 @@ protocol DeliveredOrdersDisplayLogic: class
 }
 
 class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLogic,UITableViewDelegate,UITableViewDataSource {
-
    
     @IBOutlet weak var deliveredOrderTableView: UITableView!
     @IBOutlet weak var orderCountLbl: UILabel!
@@ -30,8 +29,7 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        interactor1?.fetchItems(request: DeliveredOrdersModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id,status:"Deliverd"))
-
+//        interactor1?.fetchItems(request: DeliveredOrdersModel.Fetch.Request(user_id:GlobalVariables.shared.customer_id,status:"Delivered"))
         // Do any additional setup after loading the view.
     }
     
@@ -49,7 +47,6 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
     
     private func setup()
     {
-     
         let viewController1 = self
         let interactor1 = DeliveredOrdersInteractor()
         let presenter1 = DeliveredOrdersPresenter()
@@ -62,7 +59,6 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
     func successFetchedItems(viewModel: DeliveredOrdersModel.Fetch.ViewModel) {
         displayedDeliveredOrdersData = viewModel.displayedDeliveredOrdersData
         self.orderCountLbl.text = String(GlobalVariables.shared.orderCount) + " Order"
-        
         self.ORDER_ID.removeAll()
         
         for data in displayedDeliveredOrdersData {
@@ -70,7 +66,6 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
             let order_id = data.order_id
             
             self.ORDER_ID.append(order_id!)
-
         }
         self.deliveredOrderTableView.reloadData()
     }
@@ -87,12 +82,12 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DeliveredOrdersTableViewCell
         
-        
         let data = displayedDeliveredOrdersData[indexPath.row]
         cell.orderId.text = "Order Id : \(ORDER_ID[indexPath.row])"
         cell.date.text = data.purchase_date!
         cell.price.text = "₹ \(data.total_amount!)"
         cell.status.text = data.status
+        cell.selectionStyle = .none
         if self.selectedIndex == indexPath.row {
               cell.backgroundColor = UIColor.clear  // Highlight color
            }
@@ -119,7 +114,6 @@ class DeliveredOrdersViewController: UIViewController, DeliveredOrdersDisplayLog
         {
         let vc = segue.destination as! OrderHistoryDetailsViewController
             vc.order_id = self.order_id
-            
         }
     }
 }

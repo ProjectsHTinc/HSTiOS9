@@ -900,7 +900,6 @@ class APIManager: NSObject {
       )
      }
     
-    
     func callAPIResultFilter(user_id:String,cat_id:String,sub_cat_id:String,min_price_range:String,max_price_range:String,product_size_id:String,product_colour_id:String, onSuccess successCallback: ((_ resp: [ResultFilterModels]) -> Void)?,onFailure failureCallback: ((_ errorMessage: String) -> Void)?) {
          // Build URL
          let url = APIURL.BaseUrl_Dev+APIFunctionName.resultFilterDetailsUrl
@@ -1008,11 +1007,12 @@ class APIManager: NSObject {
          self.createRequest(url, method: .post, headers: nil, parameters: parameters as? [String : String], onSuccess: {(responseObject: JSON) -> Void in
          // Create dictionary
          print(responseObject)
-     
+            
          guard let msg = responseObject["msg"].string, msg == "Wishlist Added" else{
           failureCallback?(responseObject["msg"].string!)
            return
          }
+         
           let message =  responseObject["msg"].string
           let status =  responseObject["status"].string
      
@@ -1071,6 +1071,7 @@ class APIManager: NSObject {
          // Create dictionary
          print(responseObject)
 
+            GlobalVariables.shared.wishListCount = responseObject["wishlist_count"].int!
            guard let status = responseObject["status"].string, status == "success" else{
                failureCallback?(responseObject["msg"
                ].string!)
@@ -1896,7 +1897,7 @@ class APIManager: NSObject {
          // Create dictionary
          print(responseObject)
      
-         guard let msg = responseObject["msg"].string, msg == "Profile Updated Successfully" else{
+         guard let msg = responseObject["msg"].string, msg == "Profile Updated Successfully" || msg == "Mobile number Already Exist" else{
           failureCallback?(responseObject["msg"].string!)
            return
          }

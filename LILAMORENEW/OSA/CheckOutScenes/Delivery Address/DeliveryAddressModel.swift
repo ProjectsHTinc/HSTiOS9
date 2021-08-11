@@ -41,6 +41,7 @@ struct DeliveryAddressModel{
             var product_name : String?
             var state : String?
             var street : String?
+            var address_mode : String?
             
             }
               var displayedDeliveryAddressData: [DisplayedDeliveryAddressData]

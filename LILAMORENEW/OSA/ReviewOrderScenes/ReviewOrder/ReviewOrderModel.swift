@@ -35,6 +35,7 @@ struct ReviewOrderModel{
                 var product_id : String?
                 var product_description : String?
                 var quantity : String?
+                var status : String?
                
                 
                 }

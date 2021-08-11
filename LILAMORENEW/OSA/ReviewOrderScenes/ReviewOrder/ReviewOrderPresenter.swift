@@ -22,7 +22,7 @@ class ReviewOrderPresenter: ReviewOrderPresentationLogic
         var displayedReviewOrderData: [ReviewOrderModel.Fetch.ViewModel.DisplayedReviewOrderData] = []
        
         for data in resp.testObj {
-            let displayedReviewOrderDatas = ReviewOrderModel.Fetch.ViewModel.DisplayedReviewOrderData(product_cover_img: data.product_cover_img!,category_name: data.category_name!,total_amount: data.total_amount!,product_id: data.product_id!,product_description: data.product_description!,quantity: data.quantity!)
+            let displayedReviewOrderDatas = ReviewOrderModel.Fetch.ViewModel.DisplayedReviewOrderData(product_cover_img: data.product_cover_img!,category_name: data.category_name!,total_amount: data.total_amount!,product_id: data.product_id!,product_description: data.product_description!,quantity: data.quantity!,status: data.status!)
             displayedReviewOrderData.append(displayedReviewOrderDatas)
         }
         let viewModel = ReviewOrderModel.Fetch.ViewModel(displayedReviewOrderData: displayedReviewOrderData)

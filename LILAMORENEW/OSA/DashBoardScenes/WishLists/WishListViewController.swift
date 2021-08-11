@@ -19,6 +19,8 @@ class WishListViewController: UIViewController, WishListDisplayLogic,UICollectio
    
     @IBOutlet weak var searchBarView: UIView!
     @IBOutlet weak var wishListCollectionView: UICollectionView!
+    @IBOutlet weak var searchTextfield: UITextField!
+    @IBOutlet weak var wishlistCountLbl: UILabel!
     
     var displayedWishListData: [WishListModel.Fetch.ViewModel.DisplayedWishListData] = []
     
@@ -29,6 +31,10 @@ class WishListViewController: UIViewController, WishListDisplayLogic,UICollectio
 
         // Do any additional setup after loading the view.
         interactor?.fetchItems(request: WishListModel.Fetch.Request(user_id:"1"))
+        searchTextfield.setCorner(radius: 25)
+        if let myImage = UIImage(named: "search"){
+            searchTextfield.withImage(direction: .Left, image: myImage, colorSeparator: UIColor.clear, colorBorder: UIColor.clear)
+        }
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -61,6 +67,8 @@ class WishListViewController: UIViewController, WishListDisplayLogic,UICollectio
     func successFetchedItems(viewModel: WishListModel.Fetch.ViewModel) {
         
         displayedWishListData = viewModel.displayedWishListData
+        self.wishlistCountLbl.text = "\(String(GlobalVariables.shared.wishListCount)) products"
+       
         self.wishListCollectionView.reloadData()
     }
     

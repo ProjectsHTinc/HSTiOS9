@@ -14,11 +14,8 @@ protocol TrackOrderDisplayLogic: class
 }
 
 class TrakingViewController: UIViewController,TrackOrderDisplayLogic {
-   
     
-
     var interactor1: TrackOrderBusinessLogic?
-    
     var order_id = String()
     
     override func viewDidLoad() {
@@ -49,7 +46,6 @@ class TrakingViewController: UIViewController,TrackOrderDisplayLogic {
         presenter1.viewController1 = viewController1
     }
     
-    
     func successFetchedItems(viewModel: TrackOrderModel.Fetch.ViewModel) {
         
     }
@@ -57,5 +53,4 @@ class TrakingViewController: UIViewController,TrackOrderDisplayLogic {
     func errorFetchingItems(viewModel: TrackOrderModel.Fetch.ViewModel) {
         
     }
-    
 }

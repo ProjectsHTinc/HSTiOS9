@@ -11,8 +11,8 @@ class Menu: UIViewController, ProfileDetailsDisplayLogic {
    
     @IBOutlet weak var userPic: UIImageView!
     @IBOutlet weak var userNameLbl: UILabel!
-    @IBOutlet weak var userMailidLbl: UILabel!
     @IBOutlet weak var signInOutlet: UIButton!
+    @IBOutlet weak var helloLbl: UILabel!
     
     private var navigationBarWasHidden = false
     var interactor1: ProfileDetailsBusinessLogic?
@@ -71,8 +71,8 @@ class Menu: UIViewController, ProfileDetailsDisplayLogic {
     func successFetchedItems(viewModel: ProfileDetailsModel.Fetch.ViewModel) {
         
         self.userPic.sd_setImage(with: URL(string:viewModel.profile_picture!), placeholderImage: UIImage(named: "profile"))
+        self.helloLbl.text = "Hello,"
         self.userNameLbl.text = viewModel.first_name
-        self.userMailidLbl.text = viewModel.phone_number
         signInOutlet.isEnabled = false
         signInOutlet.titleLabel!.text = ""
     }
@@ -80,7 +80,7 @@ class Menu: UIViewController, ProfileDetailsDisplayLogic {
     func errorFetchingItems(viewModel: ProfileDetailsModel.Fetch.ViewModel) {
         signInOutlet.isEnabled = true
 //        signInOutlet.titleLabel!.text = "Sign In,"
-        signInOutlet.setTitle("Hello,SignIn", for: .normal)
+        signInOutlet.setTitle("SignIn", for: .normal)
     }
     
     @IBAction func logOutAction(_ sender: Any) {

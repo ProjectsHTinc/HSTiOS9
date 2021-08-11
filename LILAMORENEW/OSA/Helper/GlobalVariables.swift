@@ -31,7 +31,7 @@ class GlobalVariables: NSObject {
     var product_detail_reviewCount = String()
     var orderCount = Int()
     var addresslistStatus = String()
-    
+    var wishListCount = Int()
     
 }
 

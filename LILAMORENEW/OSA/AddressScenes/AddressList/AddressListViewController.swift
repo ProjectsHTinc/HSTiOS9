@@ -51,7 +51,6 @@ class AddressListViewController: UIViewController,UITableViewDelegate,UITableVie
     var state = [String]()
     var street = [String]()
     var dataTo_edit = String()
-    
     var deleteAddressId = String()
     var slectedFullName = String()
     var slectedAddress_type = String()

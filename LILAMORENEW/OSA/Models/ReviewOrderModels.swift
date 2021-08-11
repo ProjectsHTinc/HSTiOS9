@@ -16,6 +16,7 @@ class ReviewOrderModels{
     var product_id : String?
     var product_description : String?
     var quantity : String?
+    var status : String?
    
         
         // MARK: Instance Method
@@ -24,24 +25,23 @@ class ReviewOrderModels{
         if let data = dict["product_cover_img"] as? String {
         self.product_cover_img = data
         }
-        
         if let data = dict["category_name"] as? String {
         self.category_name = data
         }
-        
         if let data = dict["total_amount"] as? String {
         self.total_amount = data
         }
-        
         if let data = dict["product_id"] as? String {
         self.product_id = data
         }
         if let data = dict["product_description"] as? String {
         self.product_description = data
         }
-        
         if let data = dict["quantity"] as? String {
         self.quantity = data
+        }
+        if let data = dict["status"] as? String {
+        self.status = data
         }
     }
         

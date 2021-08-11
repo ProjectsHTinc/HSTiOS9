@@ -30,11 +30,3 @@ class TrackOrderPresenter: TrackOrderPresentationLogic
         viewController1?.successFetchedItems(viewModel: viewModel)
     }
 }
-var id : String?
-var updated_at : String?
-var purchase_order_id : String?
-var old_status : String?
-var order_id : String?
-var sent_msg : String?
-var status : String?
-var updated_by : String?

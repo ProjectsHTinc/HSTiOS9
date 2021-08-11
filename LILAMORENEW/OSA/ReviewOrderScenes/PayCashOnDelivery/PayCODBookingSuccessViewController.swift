@@ -14,7 +14,7 @@ class PayCODBookingSuccessViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        orderSuccessLabel.text = "Your order \(GlobalVariables.shared.order_id) was placedcessc with success"
+        orderSuccessLabel.text = "Your order \(GlobalVariables.shared.order_id) was placed with success.You can see the status of the order at any time"
     }
     
     

@@ -1231,15 +1231,15 @@
 			isa = PBXGroup;
 			children = (
 				792B41A926986DF60047076E /* DashBoard.swift */,
-				792B419F26986DF60047076E /* DashBoardCategory */,
 				792B41A626986DF60047076E /* DashBoardInteractor.swift */,
 				792B41A726986DF60047076E /* DashBoardPresenter.swift */,
 				792B41A826986DF60047076E /* DashBoardModel.swift */,
 				792B41AA26986DF60047076E /* DashBoardWorker.swift */,
-				792B41AB26986DF60047076E /* BestSelling */,
 				792B41B026986DF60047076E /* DashBoardRouter.swift */,
-				792B41B126986DF60047076E /* New Group */,
 				792B41B326986DF60047076E /* Menu.swift */,
+				792B419F26986DF60047076E /* DashBoardCategory */,
+				792B41AB26986DF60047076E /* BestSelling */,
+				792B41B126986DF60047076E /* New Group */,
 				792B41B426986DF60047076E /* Adds */,
 			);
 			path = DashBoard;
@@ -1677,9 +1677,9 @@
 		792B42F526986DF70047076E /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
-				792B42F626986DF70047076E /* APIManager.swift */,
 				792B42F726986DF70047076E /* APIFuctionName.swift */,
 				792B42F826986DF70047076E /* APIURL.swift */,
+				792B42F626986DF70047076E /* APIManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -2100,9 +2100,9 @@
 		792E967B269C19910037BB72 /* OrderHistoryScenes */ = {
 			isa = PBXGroup;
 			children = (
-				792E96A0269C1BE70037BB72 /* ReturnRequest */,
 				792B434526986DF70047076E /* OrderHistoryViewController.swift */,
 				792B421A26986DF60047076E /* OrderHistoryDetailsViewController.swift */,
+				792E96A0269C1BE70037BB72 /* ReturnRequest */,
 				792E968C269C1AF30037BB72 /* InTransit */,
 				792E9685269C1A7E0037BB72 /* DeleiveredOrders */,
 				7920060A269D4ED4005D1B5B /* Tracking */,
@@ -2126,9 +2126,9 @@
 		792E968C269C1AF30037BB72 /* InTransit */ = {
 			isa = PBXGroup;
 			children = (
-				792B421626986DF60047076E /* InTransitPresenter.swift */,
 				792B425026986DF60047076E /* InTransitViewController.swift */,
 				792B42FE26986DF70047076E /* InTransitModel.swift */,
+				792B421626986DF60047076E /* InTransitPresenter.swift */,
 				792B431126986DF70047076E /* InTransitInteracter.swift */,
 				792B437226986DF70047076E /* InTransitWorker.swift */,
 			);

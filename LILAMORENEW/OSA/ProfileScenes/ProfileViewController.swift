@@ -47,7 +47,7 @@ class ProfileViewController: UIViewController, ProfileUpdateDisplayLogic,Profile
 //
 //        backgrounView.layerGradient(startPoint: .left, endPoint: .right, colorArray: [UIColor(red: 189.0/255.0, green: 6.0/255.0, blue: 33.0/255.0, alpha: 1.0).cgColor, UIColor(red: 95.0/255.0, green: 3.0/255.0, blue: 17.0/255.0, alpha: 1.0).cgColor], type: .axial)
 //    }
-//
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -83,7 +83,7 @@ class ProfileViewController: UIViewController, ProfileUpdateDisplayLogic,Profile
                    return
         }
       
-        interactor?.fetchItems(request: ProfileUpdateModel.Fetch.Request(email:self.emailIdTextField.text!, user_id:"3",phone_number:self.mobileNumberTextField.text!, gender:"",dob:"", newsletter_status:"",first_name:self.userNameTextField.text!, last_name:""))
+        interactor?.fetchItems(request: ProfileUpdateModel.Fetch.Request(email:self.emailIdTextField.text!, user_id:GlobalVariables.shared.customer_id,phone_number:self.mobileNumberTextField.text!, gender:"",dob:"", newsletter_status:"",first_name:self.userNameTextField.text!, last_name:""))
     }
     
     @IBAction func selectImageAction(_ sender: Any) {
@@ -112,10 +112,10 @@ class ProfileViewController: UIViewController, ProfileUpdateDisplayLogic,Profile
         self.present(alert, animated: true, completion: nil)
     }
     
-    
 //    ProfileUpdate
     func successFetchedItems(viewModel: ProfileUpdateModel.Fetch.ViewModel) {
-        
+        AlertController.shared.showAlert(targetVc: self, title: Globals.alertTitle, message: viewModel.msg!, complition: {
+          })
     }
     
     func errorFetchingItems(viewModel: ProfileUpdateModel.Fetch.ViewModel) {
@@ -162,8 +162,7 @@ class ProfileViewController: UIViewController, ProfileUpdateDisplayLogic,Profile
 }
 
 extension ProfileViewController : UIImagePickerControllerDelegate & UINavigationControllerDelegate  {
-   
-  
+     
     func openCamera(){
             if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerController.SourceType.camera)){
             imagePicker.sourceType = UIImagePickerController.SourceType.camera
