@@ -437,6 +437,11 @@
 		794E55DB26C657EC00E0DDBF /* CCWebViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55D026C657EC00E0DDBF /* CCWebViewPresenter.swift */; };
 		794E55DC26C657EC00E0DDBF /* CCWebViewInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55C926C657EB00E0DDBF /* CCWebViewInteracter.swift */; };
 		794E55DD26C657EC00E0DDBF /* CCWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55CD26C657EB00E0DDBF /* CCWebViewModel.swift */; };
+		794E560126C6698500E0DDBF /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794E560026C6698500E0DDBF /* Category.storyboard */; };
+		794E560626C66A3200E0DDBF /* ProductDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794E560526C66A3200E0DDBF /* ProductDetails.storyboard */; };
+		794E560B26C6842A00E0DDBF /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794E560A26C6842900E0DDBF /* CheckOut.storyboard */; };
+		794E561026C6940800E0DDBF /* SearchProduct.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794E560F26C6940800E0DDBF /* SearchProduct.storyboard */; };
+		794E561526C6979800E0DDBF /* Filter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794E561426C6979800E0DDBF /* Filter.storyboard */; };
 		79DB843026C6547C00A5E914 /* CCInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842326C6547B00A5E914 /* CCInitViewController.swift */; };
 		79DB843126C6547C00A5E914 /* CCInitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842426C6547B00A5E914 /* CCInitView.swift */; };
 		79DB843226C6547C00A5E914 /* CCResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842626C6547B00A5E914 /* CCResultViewController.swift */; };
@@ -902,6 +907,11 @@
 		794E55CF26C657EC00E0DDBF /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		794E55D026C657EC00E0DDBF /* CCWebViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewPresenter.swift; sourceTree = "<group>"; };
 		794E55D126C657EC00E0DDBF /* CCWebViewWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewWorker.swift; sourceTree = "<group>"; };
+		794E560026C6698500E0DDBF /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		794E560526C66A3200E0DDBF /* ProductDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetails.storyboard; sourceTree = "<group>"; };
+		794E560A26C6842900E0DDBF /* CheckOut.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckOut.storyboard; sourceTree = "<group>"; };
+		794E560F26C6940800E0DDBF /* SearchProduct.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchProduct.storyboard; sourceTree = "<group>"; };
+		794E561426C6979800E0DDBF /* Filter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filter.storyboard; sourceTree = "<group>"; };
 		79DB842326C6547B00A5E914 /* CCInitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCInitViewController.swift; sourceTree = "<group>"; };
 		79DB842426C6547B00A5E914 /* CCInitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCInitView.swift; sourceTree = "<group>"; };
 		79DB842626C6547B00A5E914 /* CCResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCResultViewController.swift; sourceTree = "<group>"; };
@@ -1043,6 +1053,9 @@
 				792B413C26986DF50047076E /* GetStarted.storyboard */,
 				792B414126986DF60047076E /* Main.storyboard */,
 				792B414926986DF60047076E /* DashBoard.storyboard */,
+				794E560026C6698500E0DDBF /* Category.storyboard */,
+				794E560526C66A3200E0DDBF /* ProductDetails.storyboard */,
+				794E560A26C6842900E0DDBF /* CheckOut.storyboard */,
 				792B414026986DF60047076E /* Address.storyboard */,
 				792B413D26986DF60047076E /* AppSettings.storyboard */,
 				792B413E26986DF60047076E /* Profile.storyboard */,
@@ -1053,6 +1066,8 @@
 				792B414626986DF60047076E /* Notification.storyboard */,
 				792B414726986DF60047076E /* ReviewOrder.storyboard */,
 				792B414826986DF60047076E /* OrderHistory.storyboard */,
+				794E560F26C6940800E0DDBF /* SearchProduct.storyboard */,
+				794E561426C6979800E0DDBF /* Filter.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -2325,6 +2340,7 @@
 				792B455626986DF90047076E /* Montserrat-Medium.otf in Resources */,
 				792B455326986DF90047076E /* MontserratAlternates-Medium.otf in Resources */,
 				792B43BA26986DF80047076E /* BookingSuccess.storyboard in Resources */,
+				794E561526C6979800E0DDBF /* Filter.storyboard in Resources */,
 				792B43BC26986DF80047076E /* ReviewOrder.storyboard in Resources */,
 				792E970B269C28860037BB72 /* Signika-Regular.ttf in Resources */,
 				792B455226986DF90047076E /* MontserratAlternates-LightItalic.otf in Resources */,
@@ -2342,7 +2358,9 @@
 				792B455A26986DF90047076E /* Montserrat-SemiBold.otf in Resources */,
 				792B43B726986DF80047076E /* Main.storyboard in Resources */,
 				792B447426986DF90047076E /* DistributionSummary.plist in Resources */,
+				794E560126C6698500E0DDBF /* Category.storyboard in Resources */,
 				792E9707269C28860037BB72 /* Signika-SemiBold.ttf in Resources */,
+				794E561026C6940800E0DDBF /* SearchProduct.storyboard in Resources */,
 				792B455026986DF90047076E /* Montserrat-MediumItalic.otf in Resources */,
 				792E970A269C28860037BB72 /* Signika-Light.ttf in Resources */,
 				792B455926986DF90047076E /* MontserratAlternates-Light.otf in Resources */,
@@ -2354,8 +2372,10 @@
 				792B43B326986DF80047076E /* AppSettings.storyboard in Resources */,
 				792B43BE26986DF80047076E /* DashBoard.storyboard in Resources */,
 				792B455726986DF90047076E /* Montserrat-Regular.otf in Resources */,
+				794E560B26C6842A00E0DDBF /* CheckOut.storyboard in Resources */,
 				792B449426986DF90047076E /* Assets.xcassets in Resources */,
 				792B455526986DF90047076E /* MontserratAlternates-MediumItalic.otf in Resources */,
+				794E560626C66A3200E0DDBF /* ProductDetails.storyboard in Resources */,
 				792E9708269C28860037BB72 /* Signika-Medium.ttf in Resources */,
 				792B43BB26986DF80047076E /* Notification.storyboard in Resources */,
 			);
