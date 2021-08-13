@@ -424,25 +424,25 @@
 		792B456D26986DF90047076E /* DeliveredOrdersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B43AE26986DF70047076E /* DeliveredOrdersWorker.swift */; };
 		792B456E26986DF90047076E /* ReturnReasonListInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B43AF26986DF70047076E /* ReturnReasonListInteracter.swift */; };
 		792B456F26986DF90047076E /* NotificationListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B43B026986DF70047076E /* NotificationListWorker.swift */; };
-		792E95E3269C05900037BB72 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C1269C05900037BB72 /* LoadingOverlay.swift */; };
-		792E95E4269C05900037BB72 /* CCWebViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C2269C05900037BB72 /* CCWebViewRouter.swift */; };
-		792E95E5269C05900037BB72 /* CCWebViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C3269C05900037BB72 /* CCWebViewWorker.swift */; };
-		792E95E6269C05900037BB72 /* CCWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C4269C05900037BB72 /* CCWebViewViewController.swift */; };
-		792E95E7269C05900037BB72 /* CCWebViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C5269C05900037BB72 /* CCWebViewPresenter.swift */; };
-		792E95E8269C05900037BB72 /* CCWebViewInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C6269C05900037BB72 /* CCWebViewInteracter.swift */; };
-		792E95E9269C05900037BB72 /* CCWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C7269C05900037BB72 /* CCWebViewModel.swift */; };
-		792E95EA269C05900037BB72 /* CCInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95C9269C05900037BB72 /* CCInitViewController.swift */; };
-		792E95EB269C05900037BB72 /* CCInitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95CA269C05900037BB72 /* CCInitView.swift */; };
-		792E95EC269C05900037BB72 /* CCResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E95CC269C05900037BB72 /* CCResultViewController.swift */; };
-		792E95EF269C05900037BB72 /* CCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E95D9269C05900037BB72 /* CCTool.m */; };
-		792E95F0269C05900037BB72 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 792E95DB269C05900037BB72 /* Base64.m */; };
 		792E96D0269C1EC30037BB72 /* spalsh_screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 792E96CF269C1EC30037BB72 /* spalsh_screen.jpg */; };
 		792E9707269C28860037BB72 /* Signika-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9702269C287F0037BB72 /* Signika-SemiBold.ttf */; };
 		792E9708269C28860037BB72 /* Signika-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9703269C28820037BB72 /* Signika-Medium.ttf */; };
 		792E9709269C28860037BB72 /* Signika-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9704269C28840037BB72 /* Signika-Bold.ttf */; };
 		792E970A269C28860037BB72 /* Signika-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9705269C28850037BB72 /* Signika-Light.ttf */; };
 		792E970B269C28860037BB72 /* Signika-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792E9706269C28860037BB72 /* Signika-Regular.ttf */; };
-		E59457440828821669E9C049 /* Pods_LILAMORENEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D8DF92F32D17A66CCC4922 /* Pods_LILAMORENEW.framework */; };
+		794E55D326C657EC00E0DDBF /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55CF26C657EC00E0DDBF /* LoadingOverlay.swift */; };
+		794E55D526C657EC00E0DDBF /* CCWebViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55CE26C657EC00E0DDBF /* CCWebViewRouter.swift */; };
+		794E55D726C657EC00E0DDBF /* CCWebViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55D126C657EC00E0DDBF /* CCWebViewWorker.swift */; };
+		794E55D926C657EC00E0DDBF /* CCWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55CB26C657EB00E0DDBF /* CCWebViewViewController.swift */; };
+		794E55DB26C657EC00E0DDBF /* CCWebViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55D026C657EC00E0DDBF /* CCWebViewPresenter.swift */; };
+		794E55DC26C657EC00E0DDBF /* CCWebViewInteracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55C926C657EB00E0DDBF /* CCWebViewInteracter.swift */; };
+		794E55DD26C657EC00E0DDBF /* CCWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794E55CD26C657EB00E0DDBF /* CCWebViewModel.swift */; };
+		79DB843026C6547C00A5E914 /* CCInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842326C6547B00A5E914 /* CCInitViewController.swift */; };
+		79DB843126C6547C00A5E914 /* CCInitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842426C6547B00A5E914 /* CCInitView.swift */; };
+		79DB843226C6547C00A5E914 /* CCResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842626C6547B00A5E914 /* CCResultViewController.swift */; };
+		79DB843326C6547C00A5E914 /* CCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842926C6547B00A5E914 /* CCTool.m */; };
+		79DB843426C6547C00A5E914 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 79DB842C26C6547B00A5E914 /* Base64.m */; };
+		B32EA2C1489BCA062865835C /* Pods_LILAMORENEW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83523F8B9B56A5E3DF9429D4 /* Pods_LILAMORENEW.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -889,30 +889,30 @@
 		792B43B026986DF70047076E /* NotificationListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationListWorker.swift; sourceTree = "<group>"; };
 		792B45CC269873000047076E /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = "Pods/OpenSSL-Universal/Frameworks/OpenSSL.xcframework"; sourceTree = "<group>"; };
 		792B4621269878960047076E /* LilAmoreBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LilAmoreBridgingHeader.h; sourceTree = "<group>"; };
-		792E95C1269C05900037BB72 /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
-		792E95C2269C05900037BB72 /* CCWebViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewRouter.swift; sourceTree = "<group>"; };
-		792E95C3269C05900037BB72 /* CCWebViewWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewWorker.swift; sourceTree = "<group>"; };
-		792E95C4269C05900037BB72 /* CCWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewViewController.swift; sourceTree = "<group>"; };
-		792E95C5269C05900037BB72 /* CCWebViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewPresenter.swift; sourceTree = "<group>"; };
-		792E95C6269C05900037BB72 /* CCWebViewInteracter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewInteracter.swift; sourceTree = "<group>"; };
-		792E95C7269C05900037BB72 /* CCWebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewModel.swift; sourceTree = "<group>"; };
-		792E95C9269C05900037BB72 /* CCInitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCInitViewController.swift; sourceTree = "<group>"; };
-		792E95CA269C05900037BB72 /* CCInitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCInitView.swift; sourceTree = "<group>"; };
-		792E95CC269C05900037BB72 /* CCResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCResultViewController.swift; sourceTree = "<group>"; };
-		792E95D6269C05900037BB72 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		792E95D9269C05900037BB72 /* CCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTool.m; sourceTree = "<group>"; };
-		792E95DA269C05900037BB72 /* CCIntegrationKit_swift+bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCIntegrationKit_swift+bridging.h"; sourceTree = "<group>"; };
-		792E95DB269C05900037BB72 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
-		792E95DC269C05900037BB72 /* CCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTool.h; sourceTree = "<group>"; };
 		792E96CF269C1EC30037BB72 /* spalsh_screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spalsh_screen.jpg; sourceTree = "<group>"; };
 		792E9702269C287F0037BB72 /* Signika-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-SemiBold.ttf"; sourceTree = "<group>"; };
 		792E9703269C28820037BB72 /* Signika-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Medium.ttf"; sourceTree = "<group>"; };
 		792E9704269C28840037BB72 /* Signika-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Bold.ttf"; sourceTree = "<group>"; };
 		792E9705269C28850037BB72 /* Signika-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Light.ttf"; sourceTree = "<group>"; };
 		792E9706269C28860037BB72 /* Signika-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.ttf"; sourceTree = "<group>"; };
-		9C84F013CE3A21A9C8D6811E /* Pods-LILAMORENEW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LILAMORENEW.release.xcconfig"; path = "Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW.release.xcconfig"; sourceTree = "<group>"; };
-		B0D8DF92F32D17A66CCC4922 /* Pods_LILAMORENEW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LILAMORENEW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4B73C6666316103C2B1BB32 /* Pods-LILAMORENEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LILAMORENEW.debug.xcconfig"; path = "Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW.debug.xcconfig"; sourceTree = "<group>"; };
+		794E55C926C657EB00E0DDBF /* CCWebViewInteracter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewInteracter.swift; sourceTree = "<group>"; };
+		794E55CB26C657EB00E0DDBF /* CCWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewViewController.swift; sourceTree = "<group>"; };
+		794E55CD26C657EB00E0DDBF /* CCWebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewModel.swift; sourceTree = "<group>"; };
+		794E55CE26C657EC00E0DDBF /* CCWebViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewRouter.swift; sourceTree = "<group>"; };
+		794E55CF26C657EC00E0DDBF /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		794E55D026C657EC00E0DDBF /* CCWebViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewPresenter.swift; sourceTree = "<group>"; };
+		794E55D126C657EC00E0DDBF /* CCWebViewWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCWebViewWorker.swift; sourceTree = "<group>"; };
+		79DB842326C6547B00A5E914 /* CCInitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCInitViewController.swift; sourceTree = "<group>"; };
+		79DB842426C6547B00A5E914 /* CCInitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCInitView.swift; sourceTree = "<group>"; };
+		79DB842626C6547B00A5E914 /* CCResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCResultViewController.swift; sourceTree = "<group>"; };
+		79DB842826C6547B00A5E914 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		79DB842926C6547B00A5E914 /* CCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTool.m; sourceTree = "<group>"; };
+		79DB842B26C6547B00A5E914 /* CCIntegrationKit_swift+bridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCIntegrationKit_swift+bridging.h"; sourceTree = "<group>"; };
+		79DB842C26C6547B00A5E914 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		79DB842D26C6547B00A5E914 /* CCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTool.h; sourceTree = "<group>"; };
+		7A9C320ECFA9CC6CC6629323 /* Pods-LILAMORENEW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LILAMORENEW.debug.xcconfig"; path = "Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW.debug.xcconfig"; sourceTree = "<group>"; };
+		83523F8B9B56A5E3DF9429D4 /* Pods_LILAMORENEW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LILAMORENEW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE79BE102EAD85BDC2231F4B /* Pods-LILAMORENEW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LILAMORENEW.release.xcconfig"; path = "Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -920,7 +920,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E59457440828821669E9C049 /* Pods_LILAMORENEW.framework in Frameworks */,
+				B32EA2C1489BCA062865835C /* Pods_LILAMORENEW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,7 +984,6 @@
 				792B42F426986DF70047076E /* OSA.entitlements */,
 				792E96CF269C1EC30037BB72 /* spalsh_screen.jpg */,
 				792B438F26986DF70047076E /* Fonts */,
-				792B45A22698710B0047076E /* CCAVENUE */,
 				792B413926986DF50047076E /* OSA */,
 				792B411126986D620047076E /* Info.plist */,
 			);
@@ -1012,6 +1011,7 @@
 		792B413926986DF50047076E /* OSA */ = {
 			isa = PBXGroup;
 			children = (
+				79DB841E26C6547B00A5E914 /* CCAvenue */,
 				792B42CF26986DF70047076E /* Models */,
 				792B42F526986DF70047076E /* APIManager */,
 				792B431326986DF70047076E /* MainScenes */,
@@ -2021,70 +2021,6 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		792B45A22698710B0047076E /* CCAVENUE */ = {
-			isa = PBXGroup;
-			children = (
-				792B4621269878960047076E /* LilAmoreBridgingHeader.h */,
-				792E9566269C05900037BB72 /* CCAvenue */,
-			);
-			path = CCAVENUE;
-			sourceTree = "<group>";
-		};
-		792E9566269C05900037BB72 /* CCAvenue */ = {
-			isa = PBXGroup;
-			children = (
-				792E95C0269C05900037BB72 /* CCWeb */,
-				792E95C8269C05900037BB72 /* CCInitial */,
-				792E95CB269C05900037BB72 /* CCResult */,
-				792E95D5269C05900037BB72 /* Objective C Classes */,
-			);
-			name = CCAvenue;
-			path = ../../../../Downloads/CCAvenue;
-			sourceTree = "<group>";
-		};
-		792E95C0269C05900037BB72 /* CCWeb */ = {
-			isa = PBXGroup;
-			children = (
-				792E95C1269C05900037BB72 /* LoadingOverlay.swift */,
-				792E95C2269C05900037BB72 /* CCWebViewRouter.swift */,
-				792E95C3269C05900037BB72 /* CCWebViewWorker.swift */,
-				792E95C4269C05900037BB72 /* CCWebViewViewController.swift */,
-				792E95C5269C05900037BB72 /* CCWebViewPresenter.swift */,
-				792E95C6269C05900037BB72 /* CCWebViewInteracter.swift */,
-				792E95C7269C05900037BB72 /* CCWebViewModel.swift */,
-			);
-			path = CCWeb;
-			sourceTree = "<group>";
-		};
-		792E95C8269C05900037BB72 /* CCInitial */ = {
-			isa = PBXGroup;
-			children = (
-				792E95C9269C05900037BB72 /* CCInitViewController.swift */,
-				792E95CA269C05900037BB72 /* CCInitView.swift */,
-			);
-			path = CCInitial;
-			sourceTree = "<group>";
-		};
-		792E95CB269C05900037BB72 /* CCResult */ = {
-			isa = PBXGroup;
-			children = (
-				792E95CC269C05900037BB72 /* CCResultViewController.swift */,
-			);
-			path = CCResult;
-			sourceTree = "<group>";
-		};
-		792E95D5269C05900037BB72 /* Objective C Classes */ = {
-			isa = PBXGroup;
-			children = (
-				792E95D6269C05900037BB72 /* Base64.h */,
-				792E95D9269C05900037BB72 /* CCTool.m */,
-				792E95DA269C05900037BB72 /* CCIntegrationKit_swift+bridging.h */,
-				792E95DB269C05900037BB72 /* Base64.m */,
-				792E95DC269C05900037BB72 /* CCTool.h */,
-			);
-			path = "Objective C Classes";
-			sourceTree = "<group>";
-		};
 		792E9674269C18DB0037BB72 /* NotificationScens */ = {
 			isa = PBXGroup;
 			children = (
@@ -2205,11 +2141,68 @@
 			path = OrderCartDetails;
 			sourceTree = "<group>";
 		};
+		794E55C326C657EB00E0DDBF /* CCWeb */ = {
+			isa = PBXGroup;
+			children = (
+				794E55CF26C657EC00E0DDBF /* LoadingOverlay.swift */,
+				794E55CE26C657EC00E0DDBF /* CCWebViewRouter.swift */,
+				794E55D126C657EC00E0DDBF /* CCWebViewWorker.swift */,
+				794E55CB26C657EB00E0DDBF /* CCWebViewViewController.swift */,
+				794E55D026C657EC00E0DDBF /* CCWebViewPresenter.swift */,
+				794E55C926C657EB00E0DDBF /* CCWebViewInteracter.swift */,
+				794E55CD26C657EB00E0DDBF /* CCWebViewModel.swift */,
+			);
+			name = CCWeb;
+			path = LILAMORENEW/OSA/CCAvenue/CCWeb;
+			sourceTree = SOURCE_ROOT;
+		};
+		79DB841E26C6547B00A5E914 /* CCAvenue */ = {
+			isa = PBXGroup;
+			children = (
+				792B4621269878960047076E /* LilAmoreBridgingHeader.h */,
+				794E55C326C657EB00E0DDBF /* CCWeb */,
+				79DB842226C6547B00A5E914 /* CCInitial */,
+				79DB842526C6547B00A5E914 /* CCResult */,
+				79DB842726C6547B00A5E914 /* Objective C Classes */,
+			);
+			name = CCAvenue;
+			path = ../CCAVENUE/CCAvenue;
+			sourceTree = "<group>";
+		};
+		79DB842226C6547B00A5E914 /* CCInitial */ = {
+			isa = PBXGroup;
+			children = (
+				79DB842326C6547B00A5E914 /* CCInitViewController.swift */,
+				79DB842426C6547B00A5E914 /* CCInitView.swift */,
+			);
+			path = CCInitial;
+			sourceTree = "<group>";
+		};
+		79DB842526C6547B00A5E914 /* CCResult */ = {
+			isa = PBXGroup;
+			children = (
+				79DB842626C6547B00A5E914 /* CCResultViewController.swift */,
+			);
+			path = CCResult;
+			sourceTree = "<group>";
+		};
+		79DB842726C6547B00A5E914 /* Objective C Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79DB842826C6547B00A5E914 /* Base64.h */,
+				79DB842926C6547B00A5E914 /* CCTool.m */,
+				79DB842B26C6547B00A5E914 /* CCIntegrationKit_swift+bridging.h */,
+				79DB842C26C6547B00A5E914 /* Base64.m */,
+				79DB842D26C6547B00A5E914 /* CCTool.h */,
+			);
+			path = "Objective C Classes";
+			sourceTree = "<group>";
+		};
 		B42972751DD035FB747F4201 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B4B73C6666316103C2B1BB32 /* Pods-LILAMORENEW.debug.xcconfig */,
-				9C84F013CE3A21A9C8D6811E /* Pods-LILAMORENEW.release.xcconfig */,
+				7A9C320ECFA9CC6CC6629323 /* Pods-LILAMORENEW.debug.xcconfig */,
+				DE79BE102EAD85BDC2231F4B /* Pods-LILAMORENEW.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2218,7 +2211,7 @@
 			isa = PBXGroup;
 			children = (
 				792B45CC269873000047076E /* OpenSSL.xcframework */,
-				B0D8DF92F32D17A66CCC4922 /* Pods_LILAMORENEW.framework */,
+				83523F8B9B56A5E3DF9429D4 /* Pods_LILAMORENEW.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2230,12 +2223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 792B412A26986D620047076E /* Build configuration list for PBXNativeTarget "LILAMORENEW" */;
 			buildPhases = (
-				DA52C05DE9378CF6DCC3AF23 /* [CP] Check Pods Manifest.lock */,
+				5A7E85B889FA8DFACE83259C /* [CP] Check Pods Manifest.lock */,
 				792B40FC26986D530047076E /* Sources */,
 				792B40FD26986D530047076E /* Frameworks */,
 				792B40FE26986D530047076E /* Resources */,
-				D5199CDE9AA03D606EFDB6BF /* [CP] Embed Pods Frameworks */,
-				8D499AEFD2EDBB03F54F6248 /* [CP] Copy Pods Resources */,
+				9DE5F268DDBBEC5D1D7A4482 /* [CP] Embed Pods Frameworks */,
+				A4170D977C940927EC472BF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2385,41 +2378,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8D499AEFD2EDBB03F54F6248 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D5199CDE9AA03D606EFDB6BF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DA52C05DE9378CF6DCC3AF23 /* [CP] Check Pods Manifest.lock */ = {
+		5A7E85B889FA8DFACE83259C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2439,6 +2398,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE5F268DDBBEC5D1D7A4482 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4170D977C940927EC472BF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2464,6 +2457,7 @@
 				792B444F26986DF90047076E /* CheckReviewPresenter.swift in Sources */,
 				792B44AF26986DF90047076E /* ProfileDetailsWorker.swift in Sources */,
 				792B451A26986DF90047076E /* PlaceOrderModel.swift in Sources */,
+				79DB843326C6547C00A5E914 /* CCTool.m in Sources */,
 				792B454226986DF90047076E /* CartQuantityPresenter.swift in Sources */,
 				792B451E26986DF90047076E /* OrderDetailsModel.swift in Sources */,
 				792B453026986DF90047076E /* DeliveryAddressPresenter.swift in Sources */,
@@ -2471,7 +2465,6 @@
 				792B455B26986DF90047076E /* CustomNavigationBackButtonTitle.swift in Sources */,
 				792B43CD26986DF80047076E /* WalletListTableViewCell.swift in Sources */,
 				792B453E26986DF90047076E /* CartListPresenter.swift in Sources */,
-				792E95EF269C05900037BB72 /* CCTool.m in Sources */,
 				792B454726986DF90047076E /* NotificationListPresenter.swift in Sources */,
 				792B447F26986DF90047076E /* DeleteAddressWorker.swift in Sources */,
 				792B451426986DF90047076E /* DeliveredOrdersModel.swift in Sources */,
@@ -2508,6 +2501,7 @@
 				792B445D26986DF90047076E /* ReviewOrderIntercter.swift in Sources */,
 				792B449026986DF90047076E /* CheckPasswordWorker.swift in Sources */,
 				792B43DB26986DF80047076E /* OrderCartDetailsTableViewCell.swift in Sources */,
+				79DB843226C6547C00A5E914 /* CCResultViewController.swift in Sources */,
 				792B446026986DF90047076E /* ReviewOrderViewController.swift in Sources */,
 				792B440226986DF80047076E /* SearchProductPresenter.swift in Sources */,
 				792B448F26986DF90047076E /* CheckPasswordPresenter.swift in Sources */,
@@ -2537,6 +2531,7 @@
 				792B454626986DF90047076E /* DeliveredOrdersViewController.swift in Sources */,
 				792B43D126986DF80047076E /* AddressListTableViewCell.swift in Sources */,
 				792B443E26986DF80047076E /* ColourListInteracter.swift in Sources */,
+				794E55DB26C657EC00E0DDBF /* CCWebViewPresenter.swift in Sources */,
 				792B442126986DF80047076E /* ProductDetailsInteractor.swift in Sources */,
 				792B450126986DF90047076E /* GoogleIntegrationPresenter.swift in Sources */,
 				792B43D426986DF80047076E /* SubCategoryListCollectionViewCell.swift in Sources */,
@@ -2558,7 +2553,6 @@
 				792B440026986DF80047076E /* RecentSearchModel.swift in Sources */,
 				792B44F426986DF90047076E /* ForgotPasswordWorker.swift in Sources */,
 				792B446226986DF90047076E /* PayCODWorker.swift in Sources */,
-				792E95E7269C05900037BB72 /* CCWebViewPresenter.swift in Sources */,
 				792B452926986DF90047076E /* PromoCodeModel.swift in Sources */,
 				792B44B026986DF90047076E /* PayCODModels.swift in Sources */,
 				792B43CF26986DF80047076E /* AdsTableViewCell.swift in Sources */,
@@ -2576,8 +2570,8 @@
 				792B43E026986DF80047076E /* CategorySelectPresenter.swift in Sources */,
 				792B43C626986DF80047076E /* DeliveredOrdersTableViewCell.swift in Sources */,
 				792B456F26986DF90047076E /* NotificationListWorker.swift in Sources */,
-				792E95E3269C05900037BB72 /* LoadingOverlay.swift in Sources */,
 				792B44D426986DF90047076E /* APIURL.swift in Sources */,
+				794E55D726C657EC00E0DDBF /* CCWebViewWorker.swift in Sources */,
 				792B445A26986DF90047076E /* NewArrivalViewController.swift in Sources */,
 				792B43EF26986DF80047076E /* SubCategoryPresenter .swift in Sources */,
 				792B44DC26986DF90047076E /* WalletDetailsInteracter.swift in Sources */,
@@ -2596,7 +2590,7 @@
 				792B454026986DF90047076E /* CartListWorker.swift in Sources */,
 				792B44D726986DF90047076E /* NotificationListInteracter.swift in Sources */,
 				792B450326986DF90047076E /* EmailLoginViewController.swift in Sources */,
-				792E95EB269C05900037BB72 /* CCInitView.swift in Sources */,
+				794E55D526C657EC00E0DDBF /* CCWebViewRouter.swift in Sources */,
 				792B455F26986DF90047076E /* LocalizationSystem.swift in Sources */,
 				792B441226986DF80047076E /* BestSellingInteracter.swift in Sources */,
 				7920065F269D9EEA005D1B5B /* TrackingModel.swift in Sources */,
@@ -2605,7 +2599,6 @@
 				792B440F26986DF80047076E /* DashBoardModel.swift in Sources */,
 				792B44DF26986DF90047076E /* WalletDetailsModel.swift in Sources */,
 				792B448726986DF90047076E /* OrderInfoDetailsModel.swift in Sources */,
-				792E95E6269C05900037BB72 /* CCWebViewViewController.swift in Sources */,
 				792B43C826986DF80047076E /* BestSellingCollectionViewCell.swift in Sources */,
 				792B456D26986DF90047076E /* DeliveredOrdersWorker.swift in Sources */,
 				792B444E26986DF80047076E /* CheckReviewWorker.swift in Sources */,
@@ -2634,7 +2627,6 @@
 				792B455E26986DF90047076E /* BottomBorder.swift in Sources */,
 				792B444326986DF80047076E /* ListFilterWorker.swift in Sources */,
 				792B441626986DF80047076E /* DashBoardRouter.swift in Sources */,
-				792E95E9269C05900037BB72 /* CCWebViewModel.swift in Sources */,
 				792B452126986DF90047076E /* WalletRemoveWorker.swift in Sources */,
 				792B44BB26986DF90047076E /* WalletModels.swift in Sources */,
 				792B454D26986DF90047076E /* GradientView.swift in Sources */,
@@ -2642,7 +2634,6 @@
 				792B43FC26986DF80047076E /* NewArrivalsWorker.swift in Sources */,
 				792B442326986DF80047076E /* ProductColourModel.swift in Sources */,
 				792B44FB26986DF90047076E /* SignUpPresenter.swift in Sources */,
-				792E95E8269C05900037BB72 /* CCWebViewInteracter.swift in Sources */,
 				792B445926986DF90047076E /* AddReviewIntearcter.swift in Sources */,
 				792B451626986DF90047076E /* CheckOutViewController.swift in Sources */,
 				792B440B26986DF80047076E /* CategoryPresenter.swift in Sources */,
@@ -2660,6 +2651,7 @@
 				792B43DC26986DF80047076E /* ProductColourCollectionViewCell.swift in Sources */,
 				792B456B26986DF90047076E /* SceneDelegate.swift in Sources */,
 				792B43C526986DF80047076E /* ReviewOrderTableViewCell.swift in Sources */,
+				79DB843426C6547C00A5E914 /* Base64.m in Sources */,
 				792B447D26986DF90047076E /* AddressListRouter.swift in Sources */,
 				792B446926986DF90047076E /* ReturnRequestInteracter.swift in Sources */,
 				792B445326986DF90047076E /* UpdateReviewInteracter.swift in Sources */,
@@ -2670,6 +2662,7 @@
 				792B454F26986DF90047076E /* ProfileUpdateModel.swift in Sources */,
 				792B43CC26986DF80047076E /* NewArrivalALlCollectionViewCell.swift in Sources */,
 				792B44F026986DF90047076E /* ForgotPasswordInteractor.swift in Sources */,
+				79DB843126C6547C00A5E914 /* CCInitView.swift in Sources */,
 				792B43EE26986DF80047076E /* SubCategoryListModel.swift in Sources */,
 				792B442826986DF80047076E /* ProductSizeInteractor.swift in Sources */,
 				792B443726986DF80047076E /* ProductDetailsPresenter.swift in Sources */,
@@ -2678,7 +2671,8 @@
 				792B43C926986DF80047076E /* ReviewListTableViewCell.swift in Sources */,
 				792B43E226986DF80047076E /* CategorySelectWorker.swift in Sources */,
 				792B444026986DF80047076E /* ColourListModel.swift in Sources */,
-				792E95EC269C05900037BB72 /* CCResultViewController.swift in Sources */,
+				794E55DC26C657EC00E0DDBF /* CCWebViewInteracter.swift in Sources */,
+				794E55DD26C657EC00E0DDBF /* CCWebViewModel.swift in Sources */,
 				792B44F926986DF90047076E /* SignUpWorker.swift in Sources */,
 				792B44B426986DF90047076E /* ReviewModels.swift in Sources */,
 				792B444526986DF80047076E /* SizeListInteracter.swift in Sources */,
@@ -2686,7 +2680,6 @@
 				792B456026986DF90047076E /* AlertController.swift in Sources */,
 				792B441526986DF80047076E /* BestSellingModel.swift in Sources */,
 				792B453926986DF90047076E /* CartDeleteModel.swift in Sources */,
-				792E95E5269C05900037BB72 /* CCWebViewWorker.swift in Sources */,
 				792B44C526986DF90047076E /* ProfileUpdatePresenter.swift in Sources */,
 				792B44B726986DF90047076E /* OrderHistoryModels.swift in Sources */,
 				792B43E826986DF80047076E /* CheckPincodeInteracter.swift in Sources */,
@@ -2715,6 +2708,7 @@
 				792B449526986DF90047076E /* InTransitViewController.swift in Sources */,
 				792B43BF26986DF80047076E /* ViewController.swift in Sources */,
 				792B441326986DF80047076E /* BestSellingPresenter.swift in Sources */,
+				794E55D326C657EC00E0DDBF /* LoadingOverlay.swift in Sources */,
 				792B456326986DF90047076E /* GlobalVariables.swift in Sources */,
 				792B43C426986DF80047076E /* CategoryCell.swift in Sources */,
 				792B44BF26986DF90047076E /* FilterModels.swift in Sources */,
@@ -2722,6 +2716,7 @@
 				792B447C26986DF90047076E /* AddressListPresenter.swift in Sources */,
 				792B43FF26986DF80047076E /* RecentSearchInteracter.swift in Sources */,
 				792B451B26986DF90047076E /* OrderDetailsPresenter.swift in Sources */,
+				794E55D926C657EC00E0DDBF /* CCWebViewViewController.swift in Sources */,
 				792B43B126986DF80047076E /* ReturnRequestModel.swift in Sources */,
 				792B452A26986DF90047076E /* PromoCodePresenter.swift in Sources */,
 				792B451926986DF90047076E /* PlaceOrderInteracter.swift in Sources */,
@@ -2748,10 +2743,8 @@
 				792B447826986DF90047076E /* DefaultAddressPresenter.swift in Sources */,
 				792B441426986DF80047076E /* BestSellingWorker.swift in Sources */,
 				792B445C26986DF90047076E /* ReviewOrderWorker.swift in Sources */,
-				792E95F0269C05900037BB72 /* Base64.m in Sources */,
 				792B440626986DF80047076E /* SearchListViewController.swift in Sources */,
 				792B448826986DF90047076E /* NavigationBarTitleOnLeftSide.swift in Sources */,
-				792E95E4269C05900037BB72 /* CCWebViewRouter.swift in Sources */,
 				792B444226986DF80047076E /* ListFilterInteracter.swift in Sources */,
 				792B43FE26986DF80047076E /* RecentSearchPresenter.swift in Sources */,
 				792B452426986DF90047076E /* WalletApplyInteracter.swift in Sources */,
@@ -2764,6 +2757,7 @@
 				792B450526986DF90047076E /* EmailLoginWorker.swift in Sources */,
 				792B44EC26986DF90047076E /* OTPModel.swift in Sources */,
 				792B44F126986DF90047076E /* ForgotPasswordViewController.swift in Sources */,
+				79DB843026C6547C00A5E914 /* CCInitViewController.swift in Sources */,
 				792B43EA26986DF80047076E /* CheckPincodeWorker.swift in Sources */,
 				792B441A26986DF80047076E /* AdvertisementModel.swift in Sources */,
 				792B440C26986DF80047076E /* CategoryWorker.swift in Sources */,
@@ -2785,7 +2779,6 @@
 				792B44D026986DF90047076E /* NavigationBarGradient.swift in Sources */,
 				792B442726986DF80047076E /* ProductDetailsModel.swift in Sources */,
 				792B454A26986DF90047076E /* AppDelegate.swift in Sources */,
-				792E95EA269C05900037BB72 /* CCInitViewController.swift in Sources */,
 				792B452826986DF90047076E /* PromoCodeInteracter.swift in Sources */,
 				792B44EF26986DF90047076E /* OTPPresenter.swift in Sources */,
 				792B452726986DF90047076E /* PromoCodeWorker.swift in Sources */,
@@ -3017,7 +3010,7 @@
 		};
 		792B412B26986D620047076E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4B73C6666316103C2B1BB32 /* Pods-LILAMORENEW.debug.xcconfig */;
+			baseConfigurationReference = 7A9C320ECFA9CC6CC6629323 /* Pods-LILAMORENEW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -3036,7 +3029,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hst.LILAMORENEW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = LILAMORENEW/CCAVENUE/LilAmoreBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = LILAMORENEW/CCAVENUE/CCAvenue/LilAmoreBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3044,7 +3037,7 @@
 		};
 		792B412C26986D620047076E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C84F013CE3A21A9C8D6811E /* Pods-LILAMORENEW.release.xcconfig */;
+			baseConfigurationReference = DE79BE102EAD85BDC2231F4B /* Pods-LILAMORENEW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -3063,7 +3056,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hst.LILAMORENEW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = LILAMORENEW/CCAVENUE/LilAmoreBridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = LILAMORENEW/CCAVENUE/CCAvenue/LilAmoreBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
