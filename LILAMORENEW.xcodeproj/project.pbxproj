@@ -2243,7 +2243,6 @@
 				792B40FD26986D530047076E /* Frameworks */,
 				792B40FE26986D530047076E /* Resources */,
 				9DE5F268DDBBEC5D1D7A4482 /* [CP] Embed Pods Frameworks */,
-				A4170D977C940927EC472BF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2435,23 +2434,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A4170D977C940927EC472BF7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LILAMORENEW/Pods-LILAMORENEW-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

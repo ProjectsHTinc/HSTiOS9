@@ -15,8 +15,8 @@ enum UserDefaultsKey : String
       case userOtpListSessionkey
       case birth_datekey
       case customer_idkey
-      case first_nameKey
-      case last_loginKey
+      case user_login_type_Key
+      case institude_Code_Key
       case last_namekey
       case newsletter_statusKey
       case phone_numberKey
@@ -63,8 +63,8 @@ extension UserDefaults
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.userOtpListSessionkey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.birth_datekey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.customer_idkey.rawValue)
-        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.first_nameKey.rawValue)
-        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.last_loginKey.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.user_login_type_Key.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.institude_Code_Key.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.last_namekey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.newsletter_statusKey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.phone_numberKey.rawValue)
