@@ -17,6 +17,7 @@ import Foundation
 import UIKit
 
 public class LoadingOverlay{
+    
     var overlayView = UIView()
     var activityIndicator = UIActivityIndicatorView()
     var isShowing = false

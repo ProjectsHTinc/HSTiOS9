@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 enum UserDefaultsKey : String
 {
       case userOtpListSessionkey
@@ -25,7 +24,7 @@ enum UserDefaultsKey : String
       case address_idkey
       case email_idkey
       case deviceTokenKey
-    
+      case first_nameKey
 }
 
 extension UserDefaults
@@ -72,6 +71,7 @@ extension UserDefaults
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.address_idkey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.email_idkey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.deviceTokenKey.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.first_nameKey.rawValue)
     }
 }
 
