@@ -18,6 +18,7 @@ class GlobalVariables: NSObject {
        var od_days = Int()
        var total_working_days = Int()
        var present_days = Int()
+       var user_id = "1"
   
 }
 
