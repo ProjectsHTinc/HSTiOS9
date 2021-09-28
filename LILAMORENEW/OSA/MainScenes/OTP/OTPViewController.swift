@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol OTPDisplayLogic: class
+protocol OTPDisplayLogic: AnyObject
 {
     func successFetchedItems(viewModel: OTPModel.Fetch.ViewModel)
     func errorFetchingItems(viewModel: OTPModel.Fetch.ViewModel)

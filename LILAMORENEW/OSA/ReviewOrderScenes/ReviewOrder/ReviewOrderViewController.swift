@@ -9,12 +9,12 @@
 import UIKit
 import SDWebImage
 
-protocol ReviewOrderDisplayLogic: class
+protocol ReviewOrderDisplayLogic: AnyObject
 {
     func successFetchedItems(viewModel: ReviewOrderModel.Fetch.ViewModel)
     func errorFetchingItems(viewModel: ReviewOrderModel.Fetch.ViewModel)
 }
-protocol PayCODDisplayLogic: class
+protocol PayCODDisplayLogic: AnyObject
 {
     func successFetchedItems(viewModel: PayCODModel.Fetch.ViewModel)
     func errorFetchingItems(viewModel: PayCODModel.Fetch.ViewModel)

@@ -1,14 +1,12 @@
 //
-//  userDefault.swift
-//  SPV
+//  UserDefaults.swift
+//  EnsyfiApp
 //
-//  Created by HappySanz Tech on 12/10/20.
-//  Copyright © 2020 HappySanz Tech. All rights reserved.
+//  Created by HappysanziMac on 27/09/21.
 //
 
 import Foundation
 import UIKit
-
 
 enum UserDefaultsKey : String
 {
@@ -17,7 +15,7 @@ enum UserDefaultsKey : String
       case user_idkey
       case userTypeKey
       case userOtpListSessionkey
-      case last_namekey
+      case namekey
       case newsletter_statusKey
       case phone_numberKey
       case profile_picturekey
@@ -25,7 +23,6 @@ enum UserDefaultsKey : String
       case address_idkey
       case email_idkey
       case deviceTokenKey
-    
 }
 
 extension UserDefaults
@@ -65,7 +62,7 @@ extension UserDefaults
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.user_idkey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.userTypeKey.rawValue)
 //        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.last_loginKey.rawValue)
-        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.last_namekey.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.namekey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.newsletter_statusKey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.phone_numberKey.rawValue)
         UserDefaults.standard.removeObject(forKey: UserDefaultsKey.profile_picturekey.rawValue)

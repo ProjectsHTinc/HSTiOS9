@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DeliveredOrdersDisplayLogic: class
+protocol DeliveredOrdersDisplayLogic: AnyObject
 {
     func successFetchedItems(viewModel: DeliveredOrdersModel.Fetch.ViewModel)
     func errorFetchingItems(viewModel: DeliveredOrdersModel.Fetch.ViewModel)

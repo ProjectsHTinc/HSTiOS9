@@ -11,7 +11,7 @@ import Foundation
 struct Globals {
     
        static let device_type = "1";
-       static let alertTitle = "Ensyfi";
+       static let alertTitle = "Little Amore";
        static let LoginAlertMessage = "School Id is Empty";
        static let ConstituencyAlertMessage = "";
        static let OTPAlertMessage = "Otp is incorrect";
